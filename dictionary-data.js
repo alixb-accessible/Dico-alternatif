@@ -241,7 +241,7 @@ const DICTIONARY = {
             "Inventions": ["Farfelucratique (bureaucrate fou)", "Histrioncule (petit acteur prétentieux)"]
         }
     }
-};
+},
 // ========== B ==========
     "bancal": {
         types: ["validiste"],
