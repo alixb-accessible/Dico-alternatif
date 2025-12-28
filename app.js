@@ -9,7 +9,7 @@ const appState = {
         score: 0,
         gamesPlayed: 0
     },
-    currentTab: 'quiz',
+    currentTab: 'a-propos',
     quizState: {
         currentSection: 0,
         answers: [],
@@ -19,38 +19,48 @@ const appState = {
 
 // Sauvegarde/chargement des stats dans localStorage
 function saveStats() {
-    localStorage.setItem('validisme-stats', JSON.stringify({
-        discovered: Array.from(appState.userStats.discovered),
-        score: appState.userStats.score,
-        gamesPlayed: appState.userStats.gamesPlayed
-    }));
+    try {
+        localStorage.setItem('validisme-stats', JSON.stringify({
+            discovered: Array.from(appState.userStats.discovered),
+            score: appState.userStats.score,
+            gamesPlayed: appState.userStats.gamesPlayed
+        }));
+    } catch (e) {
+        console.error('Erreur sauvegarde stats:', e);
+    }
 }
 
 function loadStats() {
-    const saved = localStorage.getItem('validisme-stats');
-    if (saved) {
-        try {
+    try {
+        const saved = localStorage.getItem('validisme-stats');
+        if (saved) {
             const data = JSON.parse(saved);
             appState.userStats.discovered = new Set(data.discovered || []);
             appState.userStats.score = data.score || 0;
             appState.userStats.gamesPlayed = data.gamesPlayed || 0;
             updateStatsDisplay();
-        } catch (e) {
-            console.error('Erreur chargement stats:', e);
         }
+    } catch (e) {
+        console.error('Erreur chargement stats:', e);
     }
 }
 
 // Mise à jour de l'affichage des stats
 function updateStatsDisplay() {
-    document.getElementById('termsDiscovered').textContent = appState.userStats.discovered.size;
-    document.getElementById('userScore').textContent = appState.userStats.score;
-    document.getElementById('gamesPlayed').textContent = appState.userStats.gamesPlayed;
+    const discovered = document.getElementById('termsDiscovered');
+    const score = document.getElementById('userScore');
+    const games = document.getElementById('gamesPlayed');
+    
+    if (discovered) discovered.textContent = appState.userStats.discovered.size;
+    if (score) score.textContent = appState.userStats.score;
+    if (games) games.textContent = appState.userStats.gamesPlayed;
 }
 
 // Notification d'achievement
 function showAchievement(message, type = 'success') {
     const container = document.getElementById('achievementContainer');
+    if (!container) return;
+    
     const popup = document.createElement('div');
     popup.className = 'achievement-popup';
     popup.setAttribute('role', 'status');
@@ -110,7 +120,7 @@ function switchTab(tabId) {
 
 function loadTabContent(tabId) {
     switch(tabId) {
-        case 'prologue':
+        case 'a-propos':
             loadAProposContent();
             break;
         case 'definitions':
@@ -130,105 +140,149 @@ function loadTabContent(tabId) {
 // ========================================
 
 function loadAProposContent() {
-    const container = document.getElementById('prologueContent');
-    if (!container.hasChildNodes()) {
-        container.innerHTML = TEXTES.aPropos;
+    const container = document.getElementById('aProposContent');
+    if (!container) return;
+    
+    if (container.hasChildNodes()) return; // Déjà chargé
+    
+    // Vérifier que TEXTES existe
+    if (typeof TEXTES === 'undefined') {
+        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Le fichier dictionary-data.js n\'a pas été chargé correctement.</p></div>';
+        console.error('TEXTES non défini - dictionary-data.js manquant');
+        return;
     }
+    
+    container.innerHTML = TEXTES.aPropos || '<div class="info-section"><p>Contenu en cours de chargement...</p></div>';
 }
 
 function loadDefinitionsContent() {
     const container = document.getElementById('definitionsContent');
-    if (!container.hasChildNodes()) {
-        container.innerHTML = `
-            <div class="info-section">
-                ${TEXTES.definitions.intro}
-                ${TEXTES.definitions.validisme}
-            </div>
-            <div class="info-section">
-                ${TEXTES.definitions.capacitisme}
-            </div>
-            <div class="info-section">
-                ${TEXTES.definitions.sanisme}
-            </div>
-            <div class="info-section">
-                ${TEXTES.definitions.handiphobie}
-            </div>
-            <div class="info-section">
-                ${TEXTES.definitions.recoupements}
-            </div>
-        `;
+    if (!container) return;
+    
+    if (container.hasChildNodes()) return;
+    
+    if (typeof TEXTES === 'undefined' || !TEXTES.definitions) {
+        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Définitions non disponibles.</p></div>';
+        return;
     }
+    
+    container.innerHTML = `
+        <div class="info-section">
+            ${TEXTES.definitions.intro || ''}
+            ${TEXTES.definitions.validisme || ''}
+        </div>
+        <div class="info-section">
+            ${TEXTES.definitions.capacitisme || ''}
+        </div>
+        <div class="info-section">
+            ${TEXTES.definitions.sanisme || ''}
+        </div>
+        <div class="info-section">
+            ${TEXTES.definitions.handiphobie || ''}
+        </div>
+        <div class="info-section">
+            ${TEXTES.definitions.recoupements || ''}
+        </div>
+    `;
 }
 
 function loadAlternativesContent() {
     const container = document.getElementById('alternativesContent');
-    if (!container.hasChildNodes()) {
-        let html = `<div class="info-section">${ALTERNATIVES.introduction}</div>`;
-        
-        // Vieux français
+    if (!container) return;
+    
+    if (container.hasChildNodes()) return;
+    
+    if (typeof ALTERNATIVES === 'undefined') {
+        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Alternatives non disponibles.</p></div>';
+        return;
+    }
+    
+    let html = `<div class="info-section">${ALTERNATIVES.introduction || ''}</div>`;
+    
+    // Vieux français
+    if (ALTERNATIVES.vieuxFrancais) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.vieuxFrancais.titre}</h2>
                 ${ALTERNATIVES.vieuxFrancais.contenu}
             </div>
         `;
-        
-        // Alimentaires
+    }
+    
+    // Alimentaires
+    if (ALTERNATIVES.alimentaires) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.alimentaires.titre}</h2>
                 ${ALTERNATIVES.alimentaires.contenu}
             </div>
         `;
-        
-        // Inventions
+    }
+    
+    // Inventions
+    if (ALTERNATIVES.inventions) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.inventions.titre}</h2>
                 ${ALTERNATIVES.inventions.contenu}
             </div>
         `;
-        
-        // Régionaux
+    }
+    
+    // Régionaux
+    if (ALTERNATIVES.regionaux && ALTERNATIVES.regionaux.sections) {
         html += `<div class="info-section"><h2>${ALTERNATIVES.regionaux.titre}</h2>`;
         for (const [key, section] of Object.entries(ALTERNATIVES.regionaux.sections)) {
             html += `<h3>${section.titre}</h3>${section.contenu}`;
         }
         html += `</div>`;
-        
-        // Descriptions
+    }
+    
+    // Descriptions
+    if (ALTERNATIVES.descriptions) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.descriptions.titre}</h2>
                 ${ALTERNATIVES.descriptions.contenu}
             </div>
         `;
-        
-        // Jurons
+    }
+    
+    // Jurons
+    if (ALTERNATIVES.jurons) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.jurons.titre}</h2>
                 ${ALTERNATIVES.jurons.contenu}
             </div>
         `;
-        
-        // Conclusion
+    }
+    
+    // Conclusion
+    if (ALTERNATIVES.conclusion) {
         html += `
             <div class="info-section">
                 <h2>${ALTERNATIVES.conclusion.titre}</h2>
                 ${ALTERNATIVES.conclusion.contenu}
             </div>
         `;
-        
-        container.innerHTML = html;
     }
+    
+    container.innerHTML = html;
 }
 
 function loadHallOfShameContent() {
     const container = document.getElementById('hallOfShameContent');
-    if (!container.hasChildNodes()) {
-        container.innerHTML = `<div class="info-section hall-of-shame">${TEXTES.hallOfShame}</div>`;
+    if (!container) return;
+    
+    if (container.hasChildNodes()) return;
+    
+    if (typeof TEXTES === 'undefined') {
+        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Hall of Shame non disponible.</p></div>';
+        return;
     }
+    
+    container.innerHTML = `<div class="info-section hall-of-shame">${TEXTES.hallOfShame || ''}</div>`;
 }
 
 // ========================================
@@ -239,6 +293,11 @@ function initSearch() {
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
     const randomBtn = document.getElementById('randomBtn');
+    
+    if (!searchInput || !searchBtn || !randomBtn) {
+        console.error('Éléments de recherche non trouvés');
+        return;
+    }
     
     searchBtn.addEventListener('click', () => {
         const term = searchInput.value.trim();
@@ -253,6 +312,11 @@ function initSearch() {
     });
     
     randomBtn.addEventListener('click', () => {
+        if (typeof DICTIONARY === 'undefined' || typeof EXPRESSIONS === 'undefined') {
+            showAchievement('Erreur : base de données non chargée', 'error');
+            return;
+        }
+        
         const allTerms = [...Object.keys(DICTIONARY), ...Object.keys(EXPRESSIONS)];
         const randomTerm = allTerms[Math.floor(Math.random() * allTerms.length)];
         searchInput.value = randomTerm;
@@ -264,6 +328,22 @@ function performSearch(term) {
     const normalizedTerm = term.toLowerCase().trim();
     const results = document.getElementById('results');
     
+    if (!results) {
+        console.error('Élément results non trouvé');
+        return;
+    }
+    
+    // Vérifier que DICTIONARY existe
+    if (typeof DICTIONARY === 'undefined') {
+        results.innerHTML = `
+            <div class="result-card">
+                <h2>Erreur de chargement</h2>
+                <p style="color: red;">La base de données n'a pas été chargée correctement. Veuillez recharger la page.</p>
+            </div>
+        `;
+        return;
+    }
+    
     // Chercher d'abord dans le dictionnaire
     if (DICTIONARY[normalizedTerm]) {
         displayTermResult(normalizedTerm, DICTIONARY[normalizedTerm], 'terme');
@@ -271,7 +351,7 @@ function performSearch(term) {
     }
     
     // Puis dans les expressions
-    if (EXPRESSIONS[normalizedTerm]) {
+    if (typeof EXPRESSIONS !== 'undefined' && EXPRESSIONS[normalizedTerm]) {
         displayTermResult(normalizedTerm, EXPRESSIONS[normalizedTerm], 'expression');
         return;
     }
@@ -294,13 +374,14 @@ function performSearch(term) {
         <div class="result-card">
             <h2>Terme non trouvé</h2>
             <p>Le terme "${term}" n'est pas encore dans notre base de données. Le dictionnaire contient plus de 170 entrées !</p>
-            <p><strong>Suggestions :</strong> Essayez par exemple : débile, fou, autiste, handicapé, schizo, mongol, taré, crétin, idiot, psychopathe...</p>
+            <p><strong>Suggestions :</strong> Essayez par exemple : débile, fou, autiste, handicapé, schizo, mongol, taré, crétin, idiot, psychopathe, abruti, ahuri...</p>
         </div>
     `;
 }
 
 function displayTermResult(term, data, type) {
     const results = document.getElementById('results');
+    if (!results) return;
     
     // Mise à jour des stats
     if (!appState.userStats.discovered.has(term)) {
@@ -355,6 +436,7 @@ function displayTermResult(term, data, type) {
 
 function displayFuzzyResults(searchTerm, matches) {
     const results = document.getElementById('results');
+    if (!results) return;
     
     let html = `
         <div class="result-card">
@@ -364,14 +446,15 @@ function displayFuzzyResults(searchTerm, matches) {
     `;
     
     matches.forEach(match => {
+        const shortDesc = match.data.problematique.substring(0, 100);
         html += `
             <li style="cursor: pointer; border-left-color: #667eea;" 
-                onclick="performSearch('${match.key}')"
-                onkeypress="if(event.key==='Enter') performSearch('${match.key}')"
+                onclick="performSearch('${match.key.replace(/'/g, "\\'")}')"
+                onkeypress="if(event.key==='Enter') performSearch('${match.key.replace(/'/g, "\\'")}')"
                 tabindex="0"
                 role="button"
                 aria-label="Rechercher ${match.key}">
-                <strong>${match.key}</strong> - ${match.data.problematique.substring(0, 100)}...
+                <strong>${match.key}</strong> - ${shortDesc}...
             </li>
         `;
     });
@@ -397,7 +480,7 @@ const QUIZ_QUESTIONS = [
             "Elle est bipolaire celle-là",
             "Faut pas être parano",
             "C'est dingue / fou / insane !",
-            "Quel mongol !" + " ou sa variante : Golmon, va !"
+            "Quel mongol ! ou sa variante : Golmon, va !"
         ]
     },
     {
@@ -464,6 +547,7 @@ const QUIZ_QUESTIONS = [
 
 function initQuiz() {
     const startBtn = document.getElementById('startMainQuiz');
+    if (!startBtn) return;
     
     startBtn.addEventListener('click', () => {
         startQuiz();
@@ -473,6 +557,8 @@ function initQuiz() {
 function startQuiz() {
     const intro = document.querySelector('.quiz-intro');
     const content = document.getElementById('quizContent');
+    
+    if (!intro || !content) return;
     
     intro.style.display = 'none';
     content.style.display = 'block';
@@ -488,6 +574,8 @@ function startQuiz() {
 
 function renderQuiz() {
     const content = document.getElementById('quizContent');
+    if (!content) return;
+    
     let html = '';
     let questionIndex = 0;
     
@@ -525,7 +613,10 @@ function renderQuiz() {
     
     content.innerHTML = html;
     
-    document.getElementById('submitQuiz').addEventListener('click', calculateQuizResults);
+    const submitBtn = document.getElementById('submitQuiz');
+    if (submitBtn) {
+        submitBtn.addEventListener('click', calculateQuizResults);
+    }
 }
 
 function calculateQuizResults() {
@@ -549,10 +640,11 @@ function displayQuizResults(score) {
     const content = document.getElementById('quizContent');
     const resultsDiv = document.getElementById('quizResults');
     
+    if (!content || !resultsDiv) return;
+    
     content.style.display = 'none';
     resultsDiv.style.display = 'block';
     
-    let resultHTML = '';
     let title = '';
     let description = '';
     
@@ -567,82 +659,30 @@ function displayQuizResults(score) {
         title = "Le Conscient en Devenir";
         description = `
             <p>Diantre, tu es sur la bonne voie !</p>
-            <p>Tu as déjà conscience de certains automatismes validistes, mais il reste quelques expressions qui te filent entre les doigts (surtout dans les parties 3, 4 et 5, c'est ça ?). C'est normal : le validisme est TELLEMENT ancré dans notre langue qu'on ne le voit plus.</p>
-            <p><strong>Prochaine étape :</strong> Choisis 3-5 expressions que tu utilises souvent et trouve-leur des alternatives dans ce dictionnaire. Entraîne-toi à les utiliser pendant une semaine. Ton cerveau va intégrer progressivement ces nouveaux réflexes.</p>
-            <p><strong>Ton mantra :</strong> "Au lieu de dire [expression validiste], je vais dire [alternative créative]."</p>
+            <p>Tu as déjà conscience de certains automatismes validistes, mais il reste quelques expressions qui te filent entre les doigts. C'est normal : le validisme est TELLEMENT ancré dans notre langue qu'on ne le voit plus.</p>
+            <p><strong>Prochaine étape :</strong> Choisis 3-5 expressions que tu utilises souvent et trouve-leur des alternatives dans ce dictionnaire. Entraîne-toi à les utiliser pendant une semaine.</p>
         `;
     } else if (score <= 30) {
         title = "Le Validiste qui S'ignore";
         description = `
             <p>Palsambleu, il y a du boulot !</p>
-            <p>Tu utilises régulièrement des expressions validistes, probablement sans même t'en rendre compte. Ce n'est pas de ta faute : on baigne dedans depuis l'enfance. MAIS maintenant que tu SAIS, tu ne peux plus faire comme si de rien n'était !</p>
-            <p><strong>La bonne nouvelle :</strong> Tu as pris conscience, et c'est la première étape. Le changement est possible !</p>
-            <p><strong>Ton défi :</strong> Pendant une semaine, essaie de repérer TOUTES les fois où tu utilises une expression validiste (ou où tu l'entends). Note-les. Puis choisis-en 5 et trouve des alternatives créatives qui te plaisent vraiment.</p>
-            <h4>Astuces :</h4>
-            <ul>
-                <li>Commence par les expressions que tu utilises LE PLUS souvent</li>
-                <li>Trouve des alternatives qui te font RIRE ou qui te plaisent esthétiquement (ex: "Sacrebleu, quel faquin !" au lieu de "Quel con !")</li>
-                <li>Autorise-toi à faire des erreurs : personne n'est parfait, l'important c'est de progresser</li>
-            </ul>
-            <p><strong>Rappel :</strong> Changer de vocabulaire, ce n'est pas se censurer, c'est ENRICHIR sa langue et respecter les autres. Tu ne perds rien, tu GAGNES de la créativité !</p>
+            <p>Tu utilises régulièrement des expressions validistes, probablement sans t'en rendre compte. MAIS maintenant que tu SAIS, tu ne peux plus faire comme si de rien n'était !</p>
+            <p><strong>Ton défi :</strong> Pendant une semaine, repère toutes les fois où tu utilises une expression validiste. Note-les. Puis choisis-en 5 et trouve des alternatives créatives.</p>
         `;
     } else if (score <= 40) {
         title = "Alerte Rouge Validiste";
         description = `
             <p>Jarnibleu ! Ventrebleu ! Tudieu !</p>
-            <p>Ami·e, tu es en plein bain de validisme ! Ton langage est truffé d'expressions qui stigmatisent les personnes en situation de handicap ou ayant des troubles de santé mentale. Mais ne désespère pas : tu as fait le test, donc tu es prêt·e à changer.</p>
-            <h4>Pourquoi c'est grave :</h4>
-            <ul>
-                <li>Ces expressions banalisent la discrimination</li>
-                <li>Elles font mal aux personnes concernées (même si tu ne le vois pas)</li>
-                <li>Elles perpétuent des stéréotypes dangereux (handicap = défaut, maladie mentale = danger)</li>
-                <li>Elles appauvrissent ta langue en te faisant répéter toujours les mêmes insultes</li>
-            </ul>
-            <h4>Ton plan d'action URGENT :</h4>
-            <ol>
-                <li>Relis ce dictionnaire EN ENTIER et note les 10 expressions que tu utilises le plus</li>
-                <li>Pour chacune, trouve 2-3 alternatives qui te plaisent vraiment (vieux français, créatives, poétiques, patois, etc.)</li>
-                <li>Entraîne-toi ACTIVEMENT : quand tu es seul·e, dis ces alternatives à voix haute, fais-toi des petits jeux mentaux</li>
-                <li>Demande à un·e ami·e de te reprendre quand tu utilises une expression validiste (avec bienveillance !)</li>
-                <li>Sois patient·e avec toi-même : désapprendre des décennies d'automatismes prend du temps</li>
-            </ol>
+            <p>Ton langage est truffé d'expressions validistes. Mais ne désespère pas : tu as fait le test, donc tu es prêt·e à changer.</p>
+            <p><strong>Plan d'action URGENT :</strong> Relis ce dictionnaire et note les 10 expressions que tu utilises le plus. Pour chacune, trouve 2-3 alternatives qui te plaisent vraiment.</p>
         `;
     } else {
-        title = "Champion·ne du Validisme (il faut qu'on parle)";
+        title = "Champion·ne du Validisme";
         description = `
-            <p>VENTREBLEU ! MORBLEU ! JARNIDIEU !</p>
-            <p>Ami·e, tu as coché presque TOUTES les cases. Ton langage est un festival de validisme. Mais tu es là, tu as fait le quiz jusqu'au bout, donc il y a de l'espoir !</p>
-            <h3>Prenons les choses en main :</h3>
-            <h4>1. Comprends l'impact réel de tes mots</h4>
-            <p>Ces expressions ne sont pas "juste des mots". Pour les 12 millions de personnes en situation de handicap en France :</p>
-            <ul>
-                <li>Elles rappellent qu'on les considère comme "moins que"</li>
-                <li>Elles contribuent à leur exclusion sociale et professionnelle</li>
-                <li>Elles banalisent la discrimination qu'elles subissent au quotidien</li>
-                <li>Elles font MAL, vraiment</li>
-            </ul>
-            <h4>2. Relis le Hall of Shame</h4>
-            <p>Tu vois Farandou, Bayrou, Fillon, Zemmour ? Ils ont utilisé le handicap comme insultes devant des millions de personnes. Résultat : indignation, excuses exigées, plaintes au CSA.</p>
-            <h4>3. Action immédiate</h4>
-            <ul>
-                <li><strong>CETTE SEMAINE :</strong> Relis ce dictionnaire et choisis 5 alternatives qui te plaisent</li>
-                <li><strong>PENDANT 1 MOIS :</strong> Interdis-toi les 5 expressions validistes que tu utilises le plus</li>
-                <li>Remplace-les par tes 5 alternatives choisies (force-toi au début, ça deviendra naturel)</li>
-            </ul>
-            <h4>4. Rappelle-toi : la langue française est RICHE</h4>
-            <p>Tu as à ta disposition :</p>
-            <ul>
-                <li>Des insultes élégantes du vieux français (bélître, faquin, malotru, etc.)</li>
-                <li>Des dizaines d'insultes alimentaires</li>
-                <li>Des jurons magnifiques</li>
-                <li>Des exemples en patois</li>
-                <li>Des épithètes à base de racines grecques et latines</li>
-                <li>Des descriptions précises de comportements</li>
-                <li>Des créations poétiques infinies</li>
-            </ul>
-            <p><strong>TU N'AS BESOIN D'AUCUNE EXPRESSION VALIDISTE. AUCUNE.</strong></p>
-            <h4>5. Obligation légale et morale</h4>
-            <p>Rappel : le validisme est puni par la loi (jusqu'à 3 ans de prison et 45 000 euros d'amende). Et au-delà de la loi, c'est une question de RESPECT et d'HUMANITÉ.</p>
+            <p>VENTREBLEU ! MORBLEU !</p>
+            <p>Tu as coché presque toutes les cases. Ton langage est un festival de validisme. Mais tu es là, donc il y a de l'espoir !</p>
+            <p><strong>Action immédiate :</strong> Choisis 5 alternatives qui te plaisent dans ce dictionnaire. Force-toi à les utiliser pendant 1 mois. Ça deviendra naturel.</p>
+            <p>TU N'AS BESOIN D'AUCUNE EXPRESSION VALIDISTE. AUCUNE. Le français est riche !</p>
         `;
     }
     
@@ -665,11 +705,40 @@ function displayQuizResults(score) {
 // ========================================
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Initialisation de l\'application...');
+    
+    // Vérifier que les données sont chargées
+    if (typeof DICTIONARY === 'undefined') {
+        console.error('ERREUR CRITIQUE : dictionary-data.js n\'a pas été chargé !');
+        showAchievement('Erreur de chargement des données', 'error');
+    } else {
+        console.log('✓ DICTIONARY chargé:', Object.keys(DICTIONARY).length, 'termes');
+    }
+    
+    if (typeof TEXTES === 'undefined') {
+        console.error('ERREUR : TEXTES non défini');
+    } else {
+        console.log('✓ TEXTES chargé');
+    }
+    
+    if (typeof ALTERNATIVES === 'undefined') {
+        console.error('ERREUR : ALTERNATIVES non défini');
+    } else {
+        console.log('✓ ALTERNATIVES chargé');
+    }
+    
     loadStats();
     initNavigation();
     initSearch();
     initQuiz();
-    initGames();
+    
+    // Initialiser les jeux seulement si games.js est chargé
+    if (typeof initGames === 'function') {
+        initGames();
+    }
+    
+    // Charger le contenu initial (À PROPOS)
+    loadAProposContent();
     
     // Navigation clavier globale
     document.addEventListener('keydown', (e) => {
@@ -678,4 +747,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (results) results.innerHTML = '';
         }
     });
+    
+    console.log('✓ Initialisation terminée');
 });
