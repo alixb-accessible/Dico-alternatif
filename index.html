@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Dictionnaire des alternatives aux termes validistes, capacitistes et sanistes
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://alixb-accessible.github.io/faites-mieux-toolbar/faites-mieux.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <div class="container" role="main">
+        <header>
+            <h1>Dictionnaire des Alternatives Non-Validistes</h1>
+            <p>Enrichir son vocabulaire sans discriminer</p>
+            <div class="stats">
+                <div class="stat-card" role="status" aria-live="polite">
+                    <strong id="termsDiscovered">0</strong>
+                    <span>termes découverts</span>
+                </div>
+                <div class="stat-card" role="status" aria-live="polite">
+                    <strong id="userScore">0</strong>
+                    <span>points</span>
+                </div>
+                <div class="stat-card" role="status" aria-live="polite">
+                    <strong id="gamesPlayed">0</strong>
+                    <span>jeux joués</span>
+                </div>
+            </div>
+        </header>
+
+        <nav role="navigation" aria-label="Navigation principale">
+            <button class="nav-tab active" data-tab="quiz" aria-selected="true" role="tab">
+                Teste-toi !
+            </button>
+            <button class="nav-tab" data-tab="recherche" aria-selected="false" role="tab">
+                Recherche
+            </button>
+            <button class="nav-tab" data-tab="jeux" aria-selected="false" role="tab">
+                Jeux
+            </button>
+            <button class="nav-tab" data-tab="prologue" aria-selected="false" role="tab">
+                Prologue
+            </button>
+            <button class="nav-tab" data-tab="definitions" aria-selected="false" role="tab">
+                Définitions
+            </button>
+            <button class="nav-tab" data-tab="alternatives" aria-selected="false" role="tab">
+                Alternatives
+            </button>
+            <button class="nav-tab" data-tab="hall-of-shame" aria-selected="false" role="tab">
+                Hall of Shame
+            </button>
+            <button class="nav-tab" data-tab="remerciements" aria-selected="false" role="tab">
+                Remerciements
+            </button>
+        </nav>
+
+        <div class="content" id="main-content">
+            <!-- Onglet Quiz -->
+            <div class="tab-content active" id="quiz" role="tabpanel">
+                <div class="quiz-intro">
+                    <h2>Quiz : Teste ton niveau de validisme verbal !</h2>
+                    <p>Consigne : Coche les cases correspondant aux expressions que tu utilises ou que tu as déjà utilisées. Sois honnête avec toi-même, personne ne te juge ! L'objectif est de prendre conscience de nos automatismes.</p>
+                    <button class="primary-btn" id="startMainQuiz" aria-label="Démarrer le quiz principal">
+                        Démarrer le quiz
+                    </button>
+                </div>
+                <div id="quizContent" style="display: none;"></div>
+                <div id="quizResults" style="display: none;"></div>
+            </div>
+
+            <!-- Onglet Recherche -->
+            <div class="tab-content" id="recherche" role="tabpanel">
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <label for="searchInput" class="visually-hidden">Rechercher un terme</label>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="Cherche un terme (ex: débile, fou, handicapé, abruti...)"
+                            aria-describedby="search-help"
+                        >
+                        <button class="search-btn" id="searchBtn" aria-label="Lancer la recherche">
+                            Chercher
+                        </button>
+                    </div>
+                    <p id="search-help" class="visually-hidden">
+                        Entrez un terme pour découvrir s'il est validiste et trouver des alternatives
+                    </p>
+                    <button class="secondary-btn" id="randomBtn" aria-label="Obtenir un terme aléatoire">
+                        Terme aléatoire
+                    </button>
+                </div>
+                <div id="results" role="region" aria-live="polite" aria-atomic="true"></div>
+            </div>
+
+            <!-- Onglet Jeux -->
+            <div class="tab-content" id="jeux" role="tabpanel">
+                <h2>Jeux éducatifs</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <h3>Memory</h3>
+                        <p>Associe les termes validistes à leurs alternatives</p>
+                        <button class="primary-btn" data-game="memory">Jouer</button>
+                    </div>
+                    <div class="game-card">
+                        <h3>Vrai ou Faux</h3>
+                        <p>Teste tes connaissances sur les définitions</p>
+                        <button class="primary-btn" data-game="truefalse">Jouer</button>
+                    </div>
+                    <div class="game-card">
+                        <h3>Course contre la montre</h3>
+                        <p>Trouve le maximum d'alternatives en 60 secondes</p>
+                        <button class="primary-btn" data-game="speed">Jouer</button>
+                    </div>
+                    <div class="game-card">
+                        <h3>Bingo Validiste</h3>
+                        <p>Repère les expressions validistes dans des phrases</p>
+                        <button class="primary-btn" data-game="bingo">Jouer</button>
+                    </div>
+                    <div class="game-card">
+                        <h3>Pendu du Vieux Français</h3>
+                        <p>Devine les insultes élégantes</p>
+                        <button class="primary-btn" data-game="hangman">Jouer</button>
+                    </div>
+                </div>
+                <div id="gameArea" style="display: none;"></div>
+            </div>
+
+            <!-- Onglet Prologue -->
+            <div class="tab-content" id="prologue" role="tabpanel">
+                <div class="info-section" id="prologueContent"></div>
+            </div>
+
+            <!-- Onglet Définitions -->
+            <div class="tab-content" id="definitions" role="tabpanel">
+                <div id="definitionsContent"></div>
+            </div>
+
+            <!-- Onglet Alternatives -->
+            <div class="tab-content" id="alternatives" role="tabpanel">
+                <div id="alternativesContent"></div>
+            </div>
+
+            <!-- Onglet Hall of Shame -->
+            <div class="tab-content" id="hall-of-shame" role="tabpanel">
+                <div id="hallOfShameContent"></div>
+            </div>
+
+            <!-- Onglet Remerciements -->
+            <div class="tab-content" id="remerciements" role="tabpanel">
+                <div class="info-section" id="remerciementsContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="achievementContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="https://alixb-accessible.github.io/faites-mieux-toolbar/faites-mieux.js" defer></script>
+    <script src="dictionary-data.js"></script>
+    <script src="games.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
