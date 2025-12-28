@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Dictionnaire des alternatives aux termes validistes, capacitistes et sanistes
-</title>
+    <title>Le Dictionnaire des alternatives aux termes validistes, capacitistes et sanistes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,8 +15,7 @@
 
     <div class="container" role="main">
         <header>
-            <h1>Le Dictionnaire des alternatives aux termes validistes, capacitistes et sanistes
-</h1>
+            <h1>Le Dictionnaire des alternatives aux termes validistes, capacitistes et sanistes</h1>
             <p>Enrichir son vocabulaire sans discriminer</p>
             <div class="stats">
                 <div class="stat-card" role="status" aria-live="polite">
@@ -36,7 +34,10 @@
         </header>
 
         <nav role="navigation" aria-label="Navigation principale">
-            <button class="nav-tab active" data-tab="quiz" aria-selected="true" role="tab">
+            <button class="nav-tab active" data-tab="a-propos" aria-selected="true" role="tab">
+                À propos
+            </button>
+            <button class="nav-tab" data-tab="quiz" aria-selected="false" role="tab">
                 Teste-toi !
             </button>
             <button class="nav-tab" data-tab="recherche" aria-selected="false" role="tab">
@@ -44,9 +45,6 @@
             </button>
             <button class="nav-tab" data-tab="jeux" aria-selected="false" role="tab">
                 Jeux
-            </button>
-            <button class="nav-tab" data-tab="prologue" aria-selected="false" role="tab">
-                Prologue
             </button>
             <button class="nav-tab" data-tab="definitions" aria-selected="false" role="tab">
                 Définitions
@@ -57,17 +55,19 @@
             <button class="nav-tab" data-tab="hall-of-shame" aria-selected="false" role="tab">
                 Hall of Shame
             </button>
-            <button class="nav-tab" data-tab="remerciements" aria-selected="false" role="tab">
-                Remerciements
-            </button>
         </nav>
 
         <div class="content" id="main-content">
+            <!-- Onglet À PROPOS -->
+            <div class="tab-content active" id="a-propos" role="tabpanel">
+                <div id="aProposContent"></div>
+            </div>
+
             <!-- Onglet Quiz -->
-            <div class="tab-content active" id="quiz" role="tabpanel">
+            <div class="tab-content" id="quiz" role="tabpanel">
                 <div class="quiz-intro">
                     <h2>Quiz : Teste ton niveau de validisme verbal !</h2>
-                    <p>Consigne : Coche les cases correspondant aux expressions que tu utilises ou que tu as déjà utilisées. Sois honnête avec toi-même, personne ne te juge ! L'objectif est de prendre conscience de nos automatismes.</p>
+                    <p><strong>Consigne :</strong> Coche les cases correspondant aux expressions que tu utilises ou que tu as déjà utilisées. Sois honnête avec toi-même, personne ne te juge ! L'objectif est de prendre conscience de nos automatismes.</p>
                     <button class="primary-btn" id="startMainQuiz" aria-label="Démarrer le quiz principal">
                         Démarrer le quiz
                     </button>
@@ -134,11 +134,6 @@
                 <div id="gameArea" style="display: none;"></div>
             </div>
 
-            <!-- Onglet Prologue -->
-            <div class="tab-content" id="prologue" role="tabpanel">
-                <div class="info-section" id="prologueContent"></div>
-            </div>
-
             <!-- Onglet Définitions -->
             <div class="tab-content" id="definitions" role="tabpanel">
                 <div id="definitionsContent"></div>
@@ -152,11 +147,6 @@
             <!-- Onglet Hall of Shame -->
             <div class="tab-content" id="hall-of-shame" role="tabpanel">
                 <div id="hallOfShameContent"></div>
-            </div>
-
-            <!-- Onglet Remerciements -->
-            <div class="tab-content" id="remerciements" role="tabpanel">
-                <div class="info-section" id="remerciementsContent"></div>
             </div>
         </div>
     </div>
