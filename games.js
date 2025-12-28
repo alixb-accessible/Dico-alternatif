@@ -687,30 +687,30 @@ function initHangmanGame(container) {
         { word: 'MARAUD', hint: 'Homme du peuple (condescendant)' },
         { word: 'GANACHE', hint: 'Personne incapable et bornée' },
         { word: 'MALOTRU', hint: 'Personne aux manières grossières' },
-        { word: 'PIGNOUF', hint: 'Individu grossier, dépourvu de finesse' }
-    ];
-    
-    const selected = words[Math.floor(Math.random() * words.length)];
-    
-    // Révéler 2 lettres au hasard pour aider
-    const revealedIndices = [];
-    while (revealedIndices.length < 2) {
-        const randomIdx = Math.floor(Math.random() * selected.word.length);
-        if (!revealedIndices.includes(randomIdx) {
-            revealedIndices.push(randomIdx);
-        }
+       { word: 'PIGNOUF', hint: 'Individu grossier, dépourvu de finesse' }
+];
+
+const selected = words[Math.floor(Math.random() * words.length)];
+
+// Révéler 2 lettres au hasard pour aider
+const revealedIndices = [];
+while (revealedIndices.length < 2) {
+    const randomIdx = Math.floor(Math.random() * selected.word.length);
+    if (!revealedIndices.includes(randomIdx)) {  // ← CORRECTION ICI
+        revealedIndices.push(randomIdx);
     }
-    
-    const revealedLetters = revealedIndices.map(idx => selected.word[idx]);
-    
-    gamesState.hangman = {
-        word: selected.word,
-        hint: selected.hint,
-        guessed: [...revealedLetters],
-        remainingTries: 10,
-        category: 'Vieux français',
-        revealedLetters: revealedLetters
-    };
+}
+
+const revealedLetters = revealedIndices.map(idx => selected.word[idx]);
+
+gamesState.hangman = {
+    word: selected.word,
+    hint: selected.hint,
+    guessed: [...revealedLetters],
+    remainingTries: 10,
+    category: 'Vieux français',
+    revealedLetters: revealedLetters
+};
     
     container.innerHTML = `
         <div style="text-align: center; margin-bottom: 20px;">
