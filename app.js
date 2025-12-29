@@ -2,6 +2,93 @@
    APPLICATION PRINCIPALE
    ======================================== */
 
+// Extraction des données depuis dictionaryData
+let DICTIONARY = {};
+let EXPRESSIONS = {};
+let TEXTES = {
+    aPropos: '<div class="info-section"><h2>À propos de ce dictionnaire</h2><p>Ce dictionnaire a pour but de sensibiliser aux termes validistes, capacitistes et sanistes qui parsèment notre langage quotidien, et de proposer des alternatives non oppressives.</p></div>',
+    hallOfShame: '<h2>Hall of Shame</h2><p>Cette section recense les pires exemples de validisme dans les médias et la culture populaire. Contenu en construction.</p>',
+    definitions: {
+        intro: '<h2>Définitions</h2>',
+        validisme: '<h3>Validisme</h3><p>Discrimination et préjugés envers les personnes handicapées, considérant la validité comme la norme.</p>',
+        capacitisme: '<h3>Capacitisme</h3><p>Système de croyances qui valorise certaines capacités physiques et mentales au détriment d\'autres.</p>',
+        sanisme: '<h3>Sanisme</h3><p>Discrimination envers les personnes ayant des troubles psychiques ou de santé mentale.</p>',
+        handiphobie: '<h3>Handiphobie</h3><p>Peur, rejet ou haine envers les personnes handicapées.</p>',
+        recoupements: '<h3>Recoupements</h3><p>Ces différentes formes de discrimination se recoupent souvent et s\'entrecroisent.</p>'
+    }
+};
+let ALTERNATIVES = {
+    introduction: '<p>Voici des alternatives créatives aux insultes validistes !</p>',
+    vieuxFrancais: {
+        titre: 'Le Vieux Français',
+        contenu: '<p>Palsambleu, morbleu, ventrebleu ! Des insultes élégantes d\'antan.</p>'
+    },
+    alimentaires: {
+        titre: 'Les Alimentaires',
+        contenu: '<p>Espèce de cornichon, de patate, de courge !</p>'
+    },
+    inventions: {
+        titre: 'Les Inventions',
+        contenu: '<p>Sois créatif·ve ! Invente tes propres insultes.</p>'
+    },
+    regionaux: {
+        titre: 'Les Régionalismes',
+        sections: {
+            nord: { titre: 'Nord', contenu: '<p>Brol, cagole...</p>' },
+            sud: { titre: 'Sud', contenu: '<p>Fada, minot...</p>' }
+        }
+    },
+    descriptions: {
+        titre: 'Les Descriptions',
+        contenu: '<p>Décris précisément le comportement problématique.</p>'
+    },
+    jurons: {
+        titre: 'Les Jurons',
+        contenu: '<p>Merde, putain, bordel restent valables !</p>'
+    },
+    conclusion: {
+        titre: 'Conclusion',
+        contenu: '<p>Le français est riche, utilisons-le sans oppresser !</p>'
+    }
+};
+
+// Initialiser les données au chargement
+function initializeData() {
+    if (typeof dictionaryData === 'undefined') {
+        console.error('ERREUR CRITIQUE : dictionaryData non chargé !');
+        return false;
+    }
+    
+    // Convertir entries en format DICTIONARY
+    if (dictionaryData.entries && Array.isArray(dictionaryData.entries)) {
+        dictionaryData.entries.forEach(entry => {
+            const alternatives = {};
+            
+            // Regrouper les alternatives
+            if (entry.alternatives && Array.isArray(entry.alternatives)) {
+                alternatives['Alternatives'] = entry.alternatives;
+            }
+            
+            // Ajouter les exemples si présents
+            if (entry.examples && Array.isArray(entry.examples)) {
+                alternatives['Exemples'] = entry.examples.map(ex => 
+                    `❌ "${ex.bad}" → ✓ "${ex.good}"`
+                );
+            }
+            
+            DICTIONARY[entry.term] = {
+                types: [entry.category],
+                problematique: entry.explanation,
+                alternatives: alternatives,
+                intention: entry.problematic ? 'Terme problématique' : 'Acceptable'
+            };
+        });
+        console.log('✓ DICTIONARY créé:', Object.keys(DICTIONARY).length, 'termes');
+    }
+    
+    return true;
+}
+
 // État global de l'application
 const appState = {
     userStats: {
@@ -76,7 +163,6 @@ function showAchievement(message, type = 'success') {
         setTimeout(() => popup.remove(), 300);
     }, 3000);
 }
-
 // ========================================
 // NAVIGATION ENTRE ONGLETS
 // ========================================
@@ -145,13 +231,6 @@ function loadAProposContent() {
     
     if (container.hasChildNodes()) return; // Déjà chargé
     
-    // Vérifier que TEXTES existe
-    if (typeof TEXTES === 'undefined') {
-        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Le fichier dictionary-data.js n\'a pas été chargé correctement.</p></div>';
-        console.error('TEXTES non défini - dictionary-data.js manquant');
-        return;
-    }
-    
     container.innerHTML = TEXTES.aPropos || '<div class="info-section"><p>Contenu en cours de chargement...</p></div>';
 }
 
@@ -160,11 +239,6 @@ function loadDefinitionsContent() {
     if (!container) return;
     
     if (container.hasChildNodes()) return;
-    
-    if (typeof TEXTES === 'undefined' || !TEXTES.definitions) {
-        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Définitions non disponibles.</p></div>';
-        return;
-    }
     
     container.innerHTML = `
         <div class="info-section">
@@ -191,11 +265,6 @@ function loadAlternativesContent() {
     if (!container) return;
     
     if (container.hasChildNodes()) return;
-    
-    if (typeof ALTERNATIVES === 'undefined') {
-        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Alternatives non disponibles.</p></div>';
-        return;
-    }
     
     let html = `<div class="info-section">${ALTERNATIVES.introduction || ''}</div>`;
     
@@ -277,14 +346,8 @@ function loadHallOfShameContent() {
     
     if (container.hasChildNodes()) return;
     
-    if (typeof TEXTES === 'undefined') {
-        container.innerHTML = '<div class="info-section"><p style="color: red;">Erreur : Hall of Shame non disponible.</p></div>';
-        return;
-    }
-    
     container.innerHTML = `<div class="info-section hall-of-shame">${TEXTES.hallOfShame || ''}</div>`;
 }
-
 // ========================================
 // RECHERCHE DE TERMES
 // ========================================
@@ -312,12 +375,12 @@ function initSearch() {
     });
     
     randomBtn.addEventListener('click', () => {
-        if (typeof DICTIONARY === 'undefined' || typeof EXPRESSIONS === 'undefined') {
+        const allTerms = Object.keys(DICTIONARY);
+        if (allTerms.length === 0) {
             showAchievement('Erreur : base de données non chargée', 'error');
             return;
         }
         
-        const allTerms = [...Object.keys(DICTIONARY), ...Object.keys(EXPRESSIONS)];
         const randomTerm = allTerms[Math.floor(Math.random() * allTerms.length)];
         searchInput.value = randomTerm;
         performSearch(randomTerm);
@@ -334,7 +397,7 @@ function performSearch(term) {
     }
     
     // Vérifier que DICTIONARY existe
-    if (typeof DICTIONARY === 'undefined') {
+    if (Object.keys(DICTIONARY).length === 0) {
         results.innerHTML = `
             <div class="result-card">
                 <h2>Erreur de chargement</h2>
@@ -350,8 +413,8 @@ function performSearch(term) {
         return;
     }
     
-    // Puis dans les expressions
-    if (typeof EXPRESSIONS !== 'undefined' && EXPRESSIONS[normalizedTerm]) {
+    // Puis dans les expressions (si elles existent)
+    if (Object.keys(EXPRESSIONS).length > 0 && EXPRESSIONS[normalizedTerm]) {
         displayTermResult(normalizedTerm, EXPRESSIONS[normalizedTerm], 'expression');
         return;
     }
@@ -373,8 +436,8 @@ function performSearch(term) {
     results.innerHTML = `
         <div class="result-card">
             <h2>Terme non trouvé</h2>
-            <p>Le terme "${term}" n'est pas encore dans notre base de données. Le dictionnaire contient plus de 170 entrées !</p>
-            <p><strong>Suggestions :</strong> Essayez par exemple : débile, fou, autiste, handicapé, schizo, mongol, taré, crétin, idiot, psychopathe, abruti, ahuri...</p>
+            <p>Le terme "${term}" n'est pas encore dans notre base de données. Le dictionnaire contient actuellement ${Object.keys(DICTIONARY).length} entrées !</p>
+            <p><strong>Suggestions :</strong> Essayez par exemple : schizophrène, bipolaire, psychopathe, fou, autiste, handicapé, débile, idiot, attardé, mongolien...</p>
         </div>
     `;
 }
@@ -395,11 +458,20 @@ function displayTermResult(term, data, type) {
     // Création des badges
     const badgesHTML = data.types.map(t => {
         let badgeClass = 'badge-validiste';
-        if (t === 'saniste' || t === 'psychophobe') badgeClass = 'badge-saniste';
-        if (t === 'capacitiste') badgeClass = 'badge-capacitiste';
+        if (t === 'sante-mentale' || t === 'saniste' || t === 'psychophobe') badgeClass = 'badge-saniste';
+        if (t === 'capacitisme') badgeClass = 'badge-capacitiste';
+        if (t === 'handicap-physique') badgeClass = 'badge-validiste';
+        if (t === 'neuroatypie') badgeClass = 'badge-neuroatypie';
         if (t === 'raciste') badgeClass = 'badge-raciste';
         if (t === 'sexiste' || t === 'agiste' || t === 'eugeniste') badgeClass = 'badge-agiste';
-        return `<span class="badge ${badgeClass}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`;
+        
+        // Affichage du nom lisible
+        let displayName = t;
+        if (t === 'sante-mentale') displayName = 'Santé mentale';
+        if (t === 'handicap-physique') displayName = 'Handicap physique';
+        if (t === 'neuroatypie') displayName = 'Neuroatypie';
+        
+        return `<span class="badge ${badgeClass}">${displayName.charAt(0).toUpperCase() + displayName.slice(1)}</span>`;
     }).join('');
     
     // Création des alternatives par catégorie
@@ -423,7 +495,7 @@ function displayTermResult(term, data, type) {
         <div class="result-card">
             <div class="badges">${badgesHTML}</div>
             <h2>"${term}"</h2>
-            ${data.intention ? `<p><strong>Intention :</strong> ${data.intention}</p>` : ''}
+            ${data.intention ? `<p><strong>Statut :</strong> ${data.intention}</p>` : ''}
             <h3>Pourquoi c'est problématique :</h3>
             <p>${data.problematique}</p>
             ${alternativesHTML ? `<h3>Alternatives non oppressives :</h3>${alternativesHTML}` : ''}
@@ -462,7 +534,6 @@ function displayFuzzyResults(searchTerm, matches) {
     html += `</ul></div>`;
     results.innerHTML = html;
 }
-
 // ========================================
 // QUIZ PRINCIPAL
 // ========================================
@@ -635,7 +706,6 @@ function calculateQuizResults() {
     
     displayQuizResults(score);
 }
-
 function displayQuizResults(score) {
     const content = document.getElementById('quizContent');
     const resultsDiv = document.getElementById('quizResults');
@@ -699,7 +769,6 @@ function displayQuizResults(score) {
     
     showAchievement('Quiz terminé ! +50 points', 'success');
 }
-
 // ========================================
 // INITIALISATION
 // ========================================
@@ -707,25 +776,17 @@ function displayQuizResults(score) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Initialisation de l\'application...');
     
-    // Vérifier que les données sont chargées
-    if (typeof DICTIONARY === 'undefined') {
-        console.error('ERREUR CRITIQUE : dictionary-data.js n\'a pas été chargé !');
+    // Initialiser les données depuis dictionaryData
+    if (!initializeData()) {
+        console.error('ERREUR CRITIQUE : Impossible de charger les données');
         showAchievement('Erreur de chargement des données', 'error');
-    } else {
-        console.log('✓ DICTIONARY chargé:', Object.keys(DICTIONARY).length, 'termes');
+        return;
     }
     
-    if (typeof TEXTES === 'undefined') {
-        console.error('ERREUR : TEXTES non défini');
-    } else {
-        console.log('✓ TEXTES chargé');
-    }
-    
-    if (typeof ALTERNATIVES === 'undefined') {
-        console.error('ERREUR : ALTERNATIVES non défini');
-    } else {
-        console.log('✓ ALTERNATIVES chargé');
-    }
+    console.log('✓ Données initialisées');
+    console.log('  - DICTIONARY:', Object.keys(DICTIONARY).length, 'termes');
+    console.log('  - TEXTES: OK');
+    console.log('  - ALTERNATIVES: OK');
     
     loadStats();
     initNavigation();
@@ -735,6 +796,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialiser les jeux seulement si games.js est chargé
     if (typeof initGames === 'function') {
         initGames();
+        console.log('✓ Jeux initialisés');
+    } else {
+        console.warn('games.js non chargé - jeux non disponibles');
     }
     
     // Charger le contenu initial (À PROPOS)
@@ -750,3 +814,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('✓ Initialisation terminée');
 });
+
