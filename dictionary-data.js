@@ -240,9 +240,9 @@ const DICTIONARY = {
             "Vieux français": ["Olibrius", "Drôle de numéro"],
             "Inventions": ["Farfelucratique (bureaucrate fou)", "Histrioncule (petit acteur prétentieux)"]
         }
-    }
-},
-// ========== B ==========
+    },
+
+    // ========== B ==========
     "bancal": {
         types: ["validiste"],
         intention: "Qualifier un raisonnement comme instable",
@@ -365,9 +365,9 @@ const DICTIONARY = {
         alternatives: {
             "Descriptions": ["Confus", "Perdu", "Désorienté momentanément", "A un trou", "Un blanc", "Ne suit plus", "A décroché", "Fatigué", "Saturé"]
         }
-    },
-
-    // ========== C ==========
+    }
+};
+// ========== C (suite du DICTIONARY) ==========
     "cacochyme": {
         types: ["validiste", "agiste"],
         intention: "Qualifier quelqu'un de faible, maladif (terme vieilli)",
@@ -516,8 +516,7 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS utiliser comme métaphore"]
         }
     }
-};
-// ========== D ==========
+// ========== D (suite du DICTIONARY) ==========
     "daltonien": {
         types: ["validiste"],
         intention: "Dire que quelqu'un ne voit pas les différences, les nuances (métaphore)",
@@ -875,8 +874,7 @@ const DICTIONARY = {
             "Vieux français/littéraire": ["Rocambolesque (extravagant)", "Histrioncule"]
         }
     }
-};
-// ========== G ==========
+// ========== G (suite du DICTIONARY) ==========
     "gaga": {
         types: ["validiste", "saniste", "agiste"],
         intention: "Qualifier une personne âgée de sénile, qui 'radote'",
@@ -1127,9 +1125,8 @@ const DICTIONARY = {
             "Pour annuler quelque chose": ["Annuler", "Invalider (OK dans ce contexte technique)"],
             "Pour une personne": ["Personne handicapée", "Personne en situation de handicap"]
         }
-    },
-
-    // ========== L ==========
+    }
+// ========== L (suite du DICTIONARY) ==========
     "largué": {
         types: ["validiste"],
         intention: "Dire que quelqu'un ne suit pas, a du mal à comprendre",
@@ -1322,213 +1319,213 @@ const DICTIONARY = {
         alternatives: {
             "Descriptions": ["Nul", "Médiocre", "Mauvais", "Piètre", "Minable", "Cassé", "Défectueux", "Hors service", "En panne (pour un objet)", "Incompétent", "Peu doué", "Peu efficace"],
             "Vieux français": ["Jean-foutre", "Foutriquet", "Ganache", "Paltoquet"],
-              "Élégantes": ["De piètre qualité", "Falot", "Sans valeur", "Sans éclat"],
-"Inventions": ["Sapienticule", "Malapraxique"]
-}
-},
-"ne pas avoir toute sa tête": {
-    types: ["saniste"],
-    intention: "Dire que quelqu'un est confus, désorienté, 'fou'",
-    problematique: "Suggère une perte de capacités mentales, un dysfonctionnement.",
-    alternatives: {
-        "Descriptions": ["Confus", "Désorienté momentanément", "Très stressé", "Dépassé", "S'emporte", "Réagit fortement"]
-    }
-},
+            "Élégantes": ["De piètre qualité", "Falot", "Sans valeur", "Sans éclat"],
+            "Inventions": ["Sapienticule", "Malapraxique"]
+        }
+    },
 
-"névrosé": {
-    types: ["saniste"],
-    intention: "Critiquer quelqu'un de très préoccupé ou perfectionniste",
-    problematique: "Détourne un terme psychiatrique (névrose) en insulte, stigmatisant les personnes souffrant de troubles anxieux, TOC, phobies.",
-    alternatives: {
-        "ATTENTION": ["Ne pas utiliser comme insulte des états émotionnels légitimes"],
-        "Descriptions": ["Méticuleux", "Perfectionniste", "Pointilleux", "Préoccupé", "Soucieux", "Tracassé (descriptions factuelles, pas insultes)", "Compliqué", "Tourmenté (si on veut critiquer)"],
-        "Élégantes": ["D'un tempérament inquiet", "Esprit tortueux"],
-        "Inventions": ["Filigranophile (amoureux des détails inutiles)", "Tic-taculeux"]
-    }
-},
+    "ne pas avoir toute sa tête": {
+        types: ["saniste"],
+        intention: "Dire que quelqu'un est confus, désorienté, 'fou'",
+        problematique: "Suggère une perte de capacités mentales, un dysfonctionnement.",
+        alternatives: {
+            "Descriptions": ["Confus", "Désorienté momentanément", "Très stressé", "Dépassé", "S'emporte", "Réagit fortement"]
+        }
+    },
 
-// ========== O ==========
-"obsessionnel": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de trop focalisé, rigide dans ses habitudes",
-    problematique: "Détourne un terme psychiatrique (trouble obsessionnel compulsif - TOC) en trait de personnalité négatif.",
-    alternatives: {
-        "Descriptions": ["Méticuleux", "Perfectionniste", "Rigoureux", "Attaché aux détails", "Précis", "Pointilleux", "Systématique", "Méthodique", "Organisé"],
-        "Si excessif": ["Rigide", "Inflexible", "Peu adaptable", "Focalisé intensément sur", "Dévoué à"],
-        "Inventions": ["Filigranophile", "Tic-taculeux", "Barbouillomancien (qui brouille tout de façon obsessionnelle)"]
-    }
-},
+    "névrosé": {
+        types: ["saniste"],
+        intention: "Critiquer quelqu'un de très préoccupé ou perfectionniste",
+        problematique: "Détourne un terme psychiatrique (névrose) en insulte, stigmatisant les personnes souffrant de troubles anxieux, TOC, phobies.",
+        alternatives: {
+            "ATTENTION": ["Ne pas utiliser comme insulte des états émotionnels légitimes"],
+            "Descriptions": ["Méticuleux", "Perfectionniste", "Pointilleux", "Préoccupé", "Soucieux", "Tracassé (descriptions factuelles, pas insultes)", "Compliqué", "Tourmenté (si on veut critiquer)"],
+            "Élégantes": ["D'un tempérament inquiet", "Esprit tortueux"],
+            "Inventions": ["Filigranophile (amoureux des détails inutiles)", "Tic-taculeux"]
+        }
+    },
 
-"ouf": {
-    types: ["saniste"],
-    intention: "Qualifier quelque chose d'incroyable ou quelqu'un de bizarre (verlan de 'fou')",
-    problematique: "Verlan de 'fou', même problématique que le terme original.",
-    alternatives: {
-        "Descriptions": ["Incroyable", "Extraordinaire", "Stupéfiant", "Excentrique", "Original (si pour une personne)"],
-        "Vieux français": ["Olibrius"],
-        "Inventions": ["Rocambolesque (extravagant)"]
-    }
-},
+    // ========== O ==========
+    "obsessionnel": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de trop focalisé, rigide dans ses habitudes",
+        problematique: "Détourne un terme psychiatrique (trouble obsessionnel compulsif - TOC) en trait de personnalité négatif.",
+        alternatives: {
+            "Descriptions": ["Méticuleux", "Perfectionniste", "Rigoureux", "Attaché aux détails", "Précis", "Pointilleux", "Systématique", "Méthodique", "Organisé"],
+            "Si excessif": ["Rigide", "Inflexible", "Peu adaptable", "Focalisé intensément sur", "Dévoué à"],
+            "Inventions": ["Filigranophile", "Tic-taculeux", "Barbouillomancien (qui brouille tout de façon obsessionnelle)"]
+        }
+    },
 
-// ========== P ==========
-"panique": {
-    types: ["saniste"],
-    intention: "Exprimer un stress intense, une peur forte (utilisé légèrement)",
-    problematique: "Banalise le trouble panique, un trouble anxieux handicapant avec crises réelles et invalidantes.",
-    alternatives: {
-        "Descriptions": ["Très stressé", "Très anxieux", "Peur intense", "Angoisse forte", "Affolé", "Effrayé"],
-        "NOTE": ["'Panique' factuelle (danger réel) reste acceptable"]
-    }
-},
+    "ouf": {
+        types: ["saniste"],
+        intention: "Qualifier quelque chose d'incroyable ou quelqu'un de bizarre (verlan de 'fou')",
+        problematique: "Verlan de 'fou', même problématique que le terme original.",
+        alternatives: {
+            "Descriptions": ["Incroyable", "Extraordinaire", "Stupéfiant", "Excentrique", "Original (si pour une personne)"],
+            "Vieux français": ["Olibrius"],
+            "Inventions": ["Rocambolesque (extravagant)"]
+        }
+    },
 
-"paralysé": {
-    types: ["validiste"],
-    intention: "Dire qu'on est immobilisé par la peur, l'hésitation (métaphore : 'paralysé de peur')",
-    problematique: "Utilise le handicap moteur comme métaphore.",
-    alternatives: {
-        "Descriptions": ["Figé", "Immobilisé", "Pétrifié", "Incapable de bouger", "Cloué sur place", "Tétanisé (attention : aussi médical mais moins directement lié au handicap)"]
-    }
-},
+    // ========== P ==========
+    "panique": {
+        types: ["saniste"],
+        intention: "Exprimer un stress intense, une peur forte (utilisé légèrement)",
+        problematique: "Banalise le trouble panique, un trouble anxieux handicapant avec crises réelles et invalidantes.",
+        alternatives: {
+            "Descriptions": ["Très stressé", "Très anxieux", "Peur intense", "Angoisse forte", "Affolé", "Effrayé"],
+            "NOTE": ["'Panique' factuelle (danger réel) reste acceptable"]
+        }
+    },
 
-"parano": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de trop méfiant",
-    problematique: "Banalise un trouble psychiatrique sérieux (paranoïa, troubles délirants).",
-    alternatives: {
-        "Descriptions": ["Méfiant", "Suspicieux", "Défiant", "Soupçonneux", "Vigilant à l'excès", "Sur ses gardes", "Craintif", "Prudent à l'excès"],
-        "Si pertinent": ["Complotiste", "Conspirationniste"],
-        "Élégantes": ["Ombrageux", "Circonspect"],
-        "Inventions": ["Doxomane (obsédé par l'opinion d'autrui)"],
-        "Poétiques": ["Renard aux aguets", "Sentinelle inquiète"]
-    }
-},
+    "paralysé": {
+        types: ["validiste"],
+        intention: "Dire qu'on est immobilisé par la peur, l'hésitation (métaphore : 'paralysé de peur')",
+        problematique: "Utilise le handicap moteur comme métaphore.",
+        alternatives: {
+            "Descriptions": ["Figé", "Immobilisé", "Pétrifié", "Incapable de bouger", "Cloué sur place", "Tétanisé (attention : aussi médical mais moins directement lié au handicap)"]
+        }
+    },
 
-"parkinson": {
-    types: ["validiste"],
-    intention: "Se moquer de quelqu'un qui tremble",
-    problematique: "Se moque d'une maladie neurodégénérative grave.",
-    alternatives: {
-        "Descriptions": ["Qui tremble (constat factuel si nécessaire)"],
-        "IMPORTANT": ["Ne JAMAIS se moquer des tremblements"]
-    }
-},
+    "parano": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de trop méfiant",
+        problematique: "Banalise un trouble psychiatrique sérieux (paranoïa, troubles délirants).",
+        alternatives: {
+            "Descriptions": ["Méfiant", "Suspicieux", "Défiant", "Soupçonneux", "Vigilant à l'excès", "Sur ses gardes", "Craintif", "Prudent à l'excès"],
+            "Si pertinent": ["Complotiste", "Conspirationniste"],
+            "Élégantes": ["Ombrageux", "Circonspect"],
+            "Inventions": ["Doxomane (obsédé par l'opinion d'autrui)"],
+            "Poétiques": ["Renard aux aguets", "Sentinelle inquiète"]
+        }
+    },
 
-"pas clair": {
-    types: ["saniste"],
-    intention: "Dire que quelqu'un est bizarre, louche, ou mentalement instable",
-    problematique: "Euphémisme pour 'fou' ou 'malade mental'. Suggère une 'impureté' mentale ou un trouble de la pensée.",
-    alternatives: {
-        "Si comportement louche": ["Louche", "Suspect", "Douteux", "Équivoque"],
-        "Si étrange": ["Étrange", "Singulier", "Inhabituel", "Déconcertant"],
-        "Si malhonnête": ["Malhonnête", "Peu fiable", "Douteux"],
-        "Positif": ["Excentrique", "Original", "Atypique"],
-        "Vieux français": ["Olibrius", "Drôle de numéro"],
-        "Inventions": ["Farfadocieux", "Crepusculier (agit dans l'ombre)"]
-    }
-},
+    "parkinson": {
+        types: ["validiste"],
+        intention: "Se moquer de quelqu'un qui tremble",
+        problematique: "Se moque d'une maladie neurodégénérative grave.",
+        alternatives: {
+            "Descriptions": ["Qui tremble (constat factuel si nécessaire)"],
+            "IMPORTANT": ["Ne JAMAIS se moquer des tremblements"]
+        }
+    },
 
-"perché": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de déconnecté",
-    problematique: "Stigmatise les états de conscience altérée.",
-    alternatives: {
-        "Descriptions": ["Déconnecté", "Ailleurs", "Dans un autre monde", "Sur une autre planète", "Dans la lune", "Rêveur", "Distrait", "Absent", "Lointain", "Éthéré", "Décalé"],
-        "Élégantes": ["Esprit vagabond", "Tête dans les nuages"],
-        "Inventions": ["Somnambulogue (dit des bêtises en parlant dans le vide)", "Crepusculier"]
-    }
-},
+    "pas clair": {
+        types: ["saniste"],
+        intention: "Dire que quelqu'un est bizarre, louche, ou mentalement instable",
+        problematique: "Euphémisme pour 'fou' ou 'malade mental'. Suggère une 'impureté' mentale ou un trouble de la pensée.",
+        alternatives: {
+            "Si comportement louche": ["Louche", "Suspect", "Douteux", "Équivoque"],
+            "Si étrange": ["Étrange", "Singulier", "Inhabituel", "Déconcertant"],
+            "Si malhonnête": ["Malhonnête", "Peu fiable", "Douteux"],
+            "Positif": ["Excentrique", "Original", "Atypique"],
+            "Vieux français": ["Olibrius", "Drôle de numéro"],
+            "Inventions": ["Farfadocieux", "Crepusculier (agit dans l'ombre)"]
+        }
+    },
 
-"perdre les pédales": {
-    types: ["saniste"],
-    intention: "Dire que quelqu'un perd le contrôle, s'énerve",
-    problematique: "Métaphore du dysfonctionnement, de la perte de contrôle mental.",
-    alternatives: {
-        "Descriptions": ["Perdre son calme", "Son sang-froid", "S'emporter", "S'énerver fortement", "Réagir vivement"]
-    }
-},
+    "perché": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de déconnecté",
+        problematique: "Stigmatise les états de conscience altérée.",
+        alternatives: {
+            "Descriptions": ["Déconnecté", "Ailleurs", "Dans un autre monde", "Sur une autre planète", "Dans la lune", "Rêveur", "Distrait", "Absent", "Lointain", "Éthéré", "Décalé"],
+            "Élégantes": ["Esprit vagabond", "Tête dans les nuages"],
+            "Inventions": ["Somnambulogue (dit des bêtises en parlant dans le vide)", "Crepusculier"]
+        }
+    },
 
-"phobique": {
-    types: ["saniste"],
-    intention: "Exprimer une simple aversion ou évitement",
-    problematique: "Minimise les phobies réelles qui sont des troubles anxieux handicapants (agoraphobie, phobies spécifiques, etc.).",
-    alternatives: {
-        "Descriptions": ["Je n'aime pas", "J'évite", "Je préfère éviter", "Ça me dérange", "Ça me met mal à l'aise", "Ça me gêne", "J'ai une aversion pour", "Je fuis", "Je déteste", "Réticent à", "Peu enclin à"],
-        "Poétiques": ["Allergie du cœur", "Répulsion douce"]
-    }
-},
+    "perdre les pédales": {
+        types: ["saniste"],
+        intention: "Dire que quelqu'un perd le contrôle, s'énerve",
+        problematique: "Métaphore du dysfonctionnement, de la perte de contrôle mental.",
+        alternatives: {
+            "Descriptions": ["Perdre son calme", "Son sang-froid", "S'emporter", "S'énerver fortement", "Réagir vivement"]
+        }
+    },
 
-"piqué": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de fou, bizarre",
-    problematique: "Métaphore de la piqûre (injection), associée historiquement aux traitements psychiatriques forcés.",
-    alternatives: {
-        "Descriptions": ["Excentrique", "Original", "Décalé"],
-        "Vieux français": ["Olibrius", "Drôle de pistolet"],
-        "Inventions": ["Farfadocieux", "Farfelucratique"]
-    }
-},
+    "phobique": {
+        types: ["saniste"],
+        intention: "Exprimer une simple aversion ou évitement",
+        problematique: "Minimise les phobies réelles qui sont des troubles anxieux handicapants (agoraphobie, phobies spécifiques, etc.).",
+        alternatives: {
+            "Descriptions": ["Je n'aime pas", "J'évite", "Je préfère éviter", "Ça me dérange", "Ça me met mal à l'aise", "Ça me gêne", "J'ai une aversion pour", "Je fuis", "Je déteste", "Réticent à", "Peu enclin à"],
+            "Poétiques": ["Allergie du cœur", "Répulsion douce"]
+        }
+    },
 
-"pls": {
-    types: ["validiste", "saniste"],
-    intention: "Dire qu'on est choqué, 'mort de rire' (Position Latérale de Sécurité - détourné, langage jeune)",
-    problematique: "Détourne un geste de secourisme médical en expression banale. Banalise les situations d'urgence.",
-    alternatives: {
-        "Descriptions": ["Choqué", "Stupéfait", "Sidéré", "Mort de rire (mais attention au 'mort')", "Hilare", "Plié de rire"]
-    }
-},
+    "piqué": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de fou, bizarre",
+        problematique: "Métaphore de la piqûre (injection), associée historiquement aux traitements psychiatriques forcés.",
+        alternatives: {
+            "Descriptions": ["Excentrique", "Original", "Décalé"],
+            "Vieux français": ["Olibrius", "Drôle de pistolet"],
+            "Inventions": ["Farfadocieux", "Farfelucratique"]
+        }
+    },
 
-"pois chiche à la place du cerveau": {
-    types: ["validiste"],
-    intention: "Se moquer de l'intelligence de quelqu'un",
-    problematique: "Compare le cerveau à quelque chose de petit, suggère une déficience.",
-    alternatives: {
-        "Descriptions": ["Peu perspicace", "Peu clairvoyant"],
-        "Vieux français": ["Bélître", "Butor", "Ganache"],
-        "Inventions": ["Nodocéphale", "Crétinocéphale"],
-        "IMPORTANT": ["Ne JAMAIS comparer le cerveau à un objet"]
-    }
-},
+    "pls": {
+        types: ["validiste", "saniste"],
+        intention: "Dire qu'on est choqué, 'mort de rire' (Position Latérale de Sécurité - détourné, langage jeune)",
+        problematique: "Détourne un geste de secourisme médical en expression banale. Banalise les situations d'urgence.",
+        alternatives: {
+            "Descriptions": ["Choqué", "Stupéfait", "Sidéré", "Mort de rire (mais attention au 'mort')", "Hilare", "Plié de rire"]
+        }
+    },
 
-"psychopathe": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de dangereux, sans empathie",
-    problematique: "Détourne un diagnostic en cliché criminel, alors que la majorité des personnes avec ce trouble ne sont pas violentes. Renforce l'amalgame faux : trouble mental = danger.",
-    alternatives: {
-        "Si manque d'empathie réel": ["Insensible", "Froid", "Sans empathie", "Impitoyable", "Indifférent"],
-        "Si danger réel et avéré": ["Cruel", "Violent", "Dangereux", "Menaçant"],
-        "Si manipulateur": ["Manipulateur", "Calculateur", "Retors", "Roué"],
-        "Descriptions": ["Sans scrupule", "Amoral", "Cynique"],
-        "Élégantes": ["Dénué de compassion", "Cœur de pierre", "De marbre"],
-        "Vieux français": ["Gredin", "Forban", "Ribaud"],
-        "Créole": ["Makro", "Isalòp", "Malfézan"],
-        "Poétiques": ["Cœur de pierre", "Île émotionnelle"]
-    }
-},
+    "pois chiche à la place du cerveau": {
+        types: ["validiste"],
+        intention: "Se moquer de l'intelligence de quelqu'un",
+        problematique: "Compare le cerveau à quelque chose de petit, suggère une déficience.",
+        alternatives: {
+            "Descriptions": ["Peu perspicace", "Peu clairvoyant"],
+            "Vieux français": ["Bélître", "Butor", "Ganache"],
+            "Inventions": ["Nodocéphale", "Crétinocéphale"],
+            "IMPORTANT": ["Ne JAMAIS comparer le cerveau à un objet"]
+        }
+    },
 
-"psychose": {
-    types: ["saniste"],
-    intention: "Dire que quelqu'un exagère, s'inquiète trop, devient parano",
-    problematique: "Détourne un terme psychiatrique précis (épisode psychotique) en expression banale. Les psychoses sont des troubles graves.",
-    alternatives: {
-        "Descriptions": ["S'inquiète beaucoup", "Très inquiet", "Exagère", "En fait trop", "Très méfiant", "Suspicieux"],
-        "Poétiques": ["Tempête d'inquiétude"]
-    }
-},
+    "psychopathe": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de dangereux, sans empathie",
+        problematique: "Détourne un diagnostic en cliché criminel, alors que la majorité des personnes avec ce trouble ne sont pas violentes. Renforce l'amalgame faux : trouble mental = danger.",
+        alternatives: {
+            "Si manque d'empathie réel": ["Insensible", "Froid", "Sans empathie", "Impitoyable", "Indifférent"],
+            "Si danger réel et avéré": ["Cruel", "Violent", "Dangereux", "Menaçant"],
+            "Si manipulateur": ["Manipulateur", "Calculateur", "Retors", "Roué"],
+            "Descriptions": ["Sans scrupule", "Amoral", "Cynique"],
+            "Élégantes": ["Dénué de compassion", "Cœur de pierre", "De marbre"],
+            "Vieux français": ["Gredin", "Forban", "Ribaud"],
+            "Créole": ["Makro", "Isalòp", "Malfézan"],
+            "Poétiques": ["Cœur de pierre", "Île émotionnelle"]
+        }
+    },
 
-"psychotique": {
-    types: ["saniste"],
-    intention: "Qualifier quelqu'un de complètement déconnecté de la réalité, dangereux",
-    problematique: "Détourne un terme psychiatrique médical (psychose) en insulte. Les personnes ayant des troubles psychotiques ne sont pas systématiquement dangereuses. Renforce la stigmatisation et la peur des maladies mentales.",
-    alternatives: {
-        "Si déconnexion de la réalité": ["Déconnecté", "Irrationnel", "Incohérent"],
-        "Si danger réel et avéré": ["Dangereux", "Violent", "Menaçant (décrire le comportement factuel)"],
-        "Si étrange": ["Déconcertant", "Incompréhensible", "Déroutant"],
-        "Inventions": ["Fumigophore (qui brouille les esprits)", "Somnambulogue"],
-        "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
+    "psychose": {
+        types: ["saniste"],
+        intention: "Dire que quelqu'un exagère, s'inquiète trop, devient parano",
+        problematique: "Détourne un terme psychiatrique précis (épisode psychotique) en expression banale. Les psychoses sont des troubles graves.",
+        alternatives: {
+            "Descriptions": ["S'inquiète beaucoup", "Très inquiet", "Exagère", "En fait trop", "Très méfiant", "Suspicieux"],
+            "Poétiques": ["Tempête d'inquiétude"]
+        }
+    },
+
+    "psychotique": {
+        types: ["saniste"],
+        intention: "Qualifier quelqu'un de complètement déconnecté de la réalité, dangereux",
+        problematique: "Détourne un terme psychiatrique médical (psychose) en insulte. Les personnes ayant des troubles psychotiques ne sont pas systématiquement dangereuses. Renforce la stigmatisation et la peur des maladies mentales.",
+        alternatives: {
+            "Si déconnexion de la réalité": ["Déconnecté", "Irrationnel", "Incohérent"],
+            "Si danger réel et avéré": ["Dangereux", "Violent", "Menaçant (décrire le comportement factuel)"],
+            "Si étrange": ["Déconcertant", "Incompréhensible", "Déroutant"],
+            "Inventions": ["Fumigophore (qui brouille les esprits)", "Somnambulogue"],
+            "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
+        }
     }
-}
-};
-// ========== R ==========
+// ========== R (suite du DICTIONARY) ==========
     "ramolli": {
         types: ["validiste", "saniste", "agiste"],
         intention: "Qualifier quelqu'un de sénile, dont le cerveau se détériore",
@@ -2300,7 +2297,11 @@ const ALTERNATIVES = {
                 `
             }
         }
-    },
+    }
+};
+// ========================================
+// ALTERNATIVES (suite et fin)
+// ========================================
 
     descriptions: {
         titre: "Descriptions factuelles de comportements problématiques",
@@ -2354,9 +2355,14 @@ const ALTERNATIVES = {
             <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
             <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
         `
-      }
+    }
 };
-// Export pour utilisation dans l'app
+
+// ========================================
+// EXPORT POUR UTILISATION DANS L'APP
+// ========================================
+
 if (typeof module !== 'undefined' && module.exports) {
-module.exports = { DICTIONARY, EXPRESSIONS, TEXTES, ALTERNATIVES };
+    module.exports = { DICTIONARY, TEXTES, ALTERNATIVES };
 }
+
