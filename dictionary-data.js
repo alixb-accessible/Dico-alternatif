@@ -287,7 +287,7 @@ const DICTIONARY = {
             "Si maladroit socialement": ["Maladroit", "Gauche"]
         }
     }
-};
+},
 "bigleux": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un qui ne voit pas bien ou qui manque d'observation",
@@ -551,7 +551,7 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS utiliser comme métaphore"]
         }
     }
-};
+},
 // ========== D ==========
     "daltonien": {
         "types": ["validiste"],
@@ -921,7 +921,7 @@ const DICTIONARY = {
             "Vieux français/littéraire": ["Rocambolesque (extravagant)", "Histrioncule"]
         }
     }
-};
+},
 // ========== G ==========
     "gaga": {
         "types": ["validiste", "saniste", "agiste"],
@@ -1174,7 +1174,7 @@ const DICTIONARY = {
             "Pour une personne": ["Personne handicapée", "Personne en situation de handicap"]
         }
     }
-};
+},
 // ========== L ==========
     "largué": {
         "types": ["validiste"],
@@ -1393,7 +1393,7 @@ const DICTIONARY = {
             "Inventions": ["Filigranophile (amoureux des détails inutiles)", "Tic-taculeux"]
         }
     }
-};
+},
 // ========== O ==========
     "obsessionnel": {
         "types": ["saniste"],
@@ -1754,7 +1754,7 @@ const DICTIONARY = {
             "NOTE": ["Ces termes peuvent être acceptables s'ils décrivent factuellement, mais pas comme insultes pathologisantes"]
         }
     }
-};
+},
 // ========== T ==========
     "tapé": {
         "types": ["saniste"],
@@ -2056,7 +2056,7 @@ const DICTIONARY = {
             "NOTE": ["Variante de 'péter un câble/plomb', même problématique"]
         }
     }
-};
+},
 // ========================================
 // CONTENUS TEXTUELS COMPLETS (VERSION INTÉGRALE)
 // ========================================
@@ -2253,7 +2253,7 @@ reappropriation: `
 
         <p><strong>Morale :</strong> Ces exemples viennent tous de la droite et de l'extrême-droite. Service public, candidats à la présidentielle, ministres... Le validisme existe partout, mais il est particulièrement présent et décomplexé dans ces milieux. C'est pour cela qu'un travail sur notre langage quotidien est essentiel. Parbleu !</p>
     `
-};
+},
 
 // ========================================
 // ALTERNATIVES COMPLÈTES
