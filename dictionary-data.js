@@ -286,9 +286,9 @@ const DICTIONARY = {
             "Vieux français": ["Bélître", "Butor", "Jobastre (occitan)"],
             "Si maladroit socialement": ["Maladroit", "Gauche"]
         }
-    },
-
-    "bigleux": {
+    }
+};
+"bigleux": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un qui ne voit pas bien ou qui manque d'observation",
         "problematique": "Se moque des personnes malvoyantes ou ayant des troubles de la vision.",
@@ -355,6 +355,18 @@ const DICTIONARY = {
             "Poétiques": ["Cœur à vif", "Tempérament de braise"],
             "Inventions": ["Vexibond (qui s'indigne pour un rien)", "Tremblacieux (qui tremble de façon excessive)"],
             "NOTE": ["Éviter 'instable' appliqué à une personne (connotation saniste)"]
+        }
+    },
+
+    "bouffi": {
+        "types": ["validiste"],
+        "intention": "Insulter quelqu'un en se moquant de son apparence physique, suggérer qu'il est gonflé, prétentieux",
+        "problematique": "Peut se moquer de conditions médicales réelles (œdème, rétention d'eau, effets de traitements médicaux, etc.). Utilise l'apparence physique liée à des problèmes de santé comme insulte.",
+        "alternatives": {
+            "Pour 'enflé' au sens de prétentieux": ["Prétentieux", "Arrogant", "Orgueilleux", "Suffisant", "Imbu de soi", "Vaniteux"],
+            "Vieux français": ["Cuistre", "Faquin", "Paltoquet"],
+            "Pour 'bouffi'": ["Ne JAMAIS utiliser l'apparence physique comme insulte"],
+            "Si on veut critiquer le comportement": ["Prétentieux", "Orgueilleux", "Égotique"]
         }
     },
 
@@ -450,6 +462,18 @@ const DICTIONARY = {
         }
     },
 
+    "con": {
+        "types": ["validiste", "sexiste"],
+        "intention": "Insulter quelqu'un perçu comme incompétent, méchant ou agaçant",
+        "problematique": "Étymologiquement, 'con' vient du latin cunnus (sexe féminin), donc déjà sexiste à la base. Son usage moderne en fait aussi une insulte validiste : traiter quelqu'un de 'con' revient à l'insulter sur ses capacités intellectuelles perçues comme déficientes. C'est une dévalorisation par l'intelligence supposée, qui stigmatise indirectement les personnes ayant des handicaps cognitifs ou intellectuels. Le message sous-jacent : 'être bête' est la pire des tares. Cela renforce le capacitisme en hiérarchisant les personnes selon leurs capacités cognitives.",
+        "alternatives": {
+            "Pour la bêtise/incompétence": ["Ignare", "Inculte", "Mal informé", "Maladroit", "Incompétent", "Brouillon", "Étourdi", "Distrait", "Tête en l'air", "Négligent", "Peu rigoureux"],
+            "Pour la méchanceté/malveillance": ["Malveillant", "Nuisible", "Toxique", "Mufle", "Goujat", "Malotru", "Égoïste", "Sans-gêne", "Indélicat", "Mesquin", "Petit", "Médiocre"],
+            "Pour l'agacement général": ["Pénible", "Insupportable", "Exaspérant", "Emmerdeur", "Casse-pieds", "Enquiquineur", "Pot de colle"],
+            "Inventions": ["Cornichon diplomatique", "Patate égocentrique", "Champion de l'à-peu-près", "As du contresens"]
+        }
+    },
+
     "contrefait": {
         "types": ["validiste"],
         "intention": "Décrire quelque chose de mal fait, déformé (ou insulter l'apparence physique)",
@@ -469,6 +493,17 @@ const DICTIONARY = {
         }
     },
 
+    "court sur pattes": {
+        "types": ["validiste"],
+        "intention": "Se moquer de quelqu'un de petite taille",
+        "problematique": "Se moque des personnes de petite taille, qu'elles aient ou non une condition médicale (nanisme, etc.). Réduit une personne à sa taille et utilise une caractéristique physique comme moquerie.",
+        "alternatives": {
+            "IMPORTANT": ["Ne JAMAIS utiliser une caractéristique physique comme insulte"],
+            "Si vraiment besoin de critiquer quelqu'un": ["Utiliser les alternatives habituelles du dictionnaire (cuistre, faquin, etc.)"],
+            "Rappel": ["La taille d'une personne ne doit JAMAIS être un sujet de moquerie"]
+        }
+    },
+
     "crétin": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un de peu réfléchi",
@@ -479,7 +514,7 @@ const DICTIONARY = {
             "Pour un comportement": ["Irréfléchi", "Inconsidéré", "Imprudent", "Peu judicieux"],
             "Absurde": ["Ridiculement imprudent", "D'une absurdité confondante"],
             "Créatives": ["Emplâtre"],
-            "Inventions": ["Nodocéphale", "Crétinocéphale", "Malapraxique", "Verboplecte"],
+            "Inventions": ["Nodocéphale", "Malapraxique", "Verboplecte"],
             "Alsacien": ["Stinkmichel"],
             "Ch'ti": ["Caboche (obstiné)", "Babelle (bavard)"],
             "Normand": ["Grand sicot", "Caboche"],
@@ -515,9 +550,9 @@ const DICTIONARY = {
             "Si nécessaire factuellement": ["Personne amputée des membres inférieurs"],
             "IMPORTANT": ["Ne JAMAIS utiliser comme métaphore"]
         }
-    },
-
-    // ========== D ==========
+    }
+};
+// ========== D ==========
     "daltonien": {
         "types": ["validiste"],
         "intention": "Dire que quelqu'un ne voit pas les différences, les nuances (métaphore)",
@@ -740,6 +775,17 @@ const DICTIONARY = {
         }
     },
 
+    "enflé": {
+        "types": ["validiste"],
+        "intention": "Insulter quelqu'un en le traitant de prétentieux (ou en se moquant de son apparence)",
+        "problematique": "Peut se moquer de conditions médicales réelles (œdème, rétention d'eau, effets de traitements). Utilise l'apparence physique liée à des problèmes de santé comme insulte.",
+        "alternatives": {
+            "Pour le sens de prétentieux": ["Prétentieux", "Arrogant", "Orgueilleux", "Suffisant", "Imbu de soi", "Vaniteux"],
+            "Vieux français": ["Cuistre", "Faquin", "Paltoquet"],
+            "IMPORTANT": ["Ne JAMAIS utiliser l'apparence physique comme insulte"]
+        }
+    },
+
     "épileptique": {
         "types": ["validiste"],
         "intention": "Décrire un mouvement saccadé, lumière clignotante",
@@ -874,8 +920,8 @@ const DICTIONARY = {
             "Inventions": ["Farfadocieux"],
             "Vieux français/littéraire": ["Rocambolesque (extravagant)", "Histrioncule"]
         }
-    },
-
+    }
+};
 // ========== G ==========
     "gaga": {
         "types": ["validiste", "saniste", "agiste"],
@@ -1127,9 +1173,9 @@ const DICTIONARY = {
             "Pour annuler quelque chose": ["Annuler", "Invalider (OK dans ce contexte technique)"],
             "Pour une personne": ["Personne handicapée", "Personne en situation de handicap"]
         }
-    },
-
-    // ========== L ==========
+    }
+};
+// ========== L ==========
     "largué": {
         "types": ["validiste"],
         "intention": "Dire que quelqu'un ne suit pas, a du mal à comprendre",
@@ -1171,7 +1217,8 @@ const DICTIONARY = {
             "NOTE": ["Éviter 'instable' appliqué à l'humeur (connotation saniste)"]
         }
     },
-// ========== M ==========
+
+    // ========== M ==========
     "maboul": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de fou, bizarre (argot)",
@@ -1345,9 +1392,9 @@ const DICTIONARY = {
             "Élégantes": ["D'un tempérament inquiet", "Esprit tortueux"],
             "Inventions": ["Filigranophile (amoureux des détails inutiles)", "Tic-taculeux"]
         }
-    },
-
-    // ========== O ==========
+    }
+};
+// ========== O ==========
     "obsessionnel": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de trop focalisé, rigide dans ses habitudes",
@@ -1527,7 +1574,8 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
         }
     },
-// ========== R ==========
+
+    // ========== R ==========
     "ramolli": {
         "types": ["validiste", "saniste", "agiste"],
         "intention": "Qualifier quelqu'un de sénile, dont le cerveau se détériore",
@@ -1686,6 +1734,17 @@ const DICTIONARY = {
         }
     },
 
+    "stupide": {
+        "types": ["validiste"],
+        "intention": "Qualifier quelqu'un ou quelque chose de dénué d'intelligence, d'absurde, d'insensé",
+        "problematique": "'Stupide' vient du latin stupidus (engourdi, hébété, frappé de stupeur), désignant à l'origine un état d'hébétude mentale. Le terme est devenu une insulte directe aux capacités intellectuelles. Utiliser 'stupide' comme insulte renforce l'idée que l'intelligence est la principale valeur d'une personne et que tout déficit cognitif (réel ou perçu) est méprisable. Cela stigmatise les personnes ayant des handicaps intellectuels, des troubles cognitifs ou des difficultés d'apprentissage en faisant de la 'stupidité' le pire des défauts. C'est du capacitisme pur : la hiérarchisation des personnes selon leurs capacités cognitives.",
+        "alternatives": {
+            "Pour une personne": ["Maladroit", "Malhabile", "Peu perspicace", "Naïf", "Crédule", "Peu informé", "Irréfléchi", "Imprudent", "Étourdi", "Obtus", "Borné", "Fermé d'esprit", "Négligent", "Peu attentif", "Distrait"],
+            "Pour une idée/situation/chose": ["Absurde", "Insensé", "Incohérent", "Ridicule", "Grotesque", "Risible", "Inadapté", "Inapproprié", "Inadéquat", "Sans intérêt", "Vain", "Futile", "Bancal", "Mal fichu"],
+            "Inventions": ["Raisonnébranlant (qui ébranle la raison)", "Logicobricolé (dont la logique est approximative)", "Réflexion-passoire", "Cerveau-tamis", "Champion de l'à-peu-près"]
+        }
+    },
+
     "susceptible": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de facilement vexé, d'humeur changeante",
@@ -1694,9 +1753,9 @@ const DICTIONARY = {
             "Descriptions": ["Sensible", "À fleur de peau", "D'humeur changeante", "Imprévisible"],
             "NOTE": ["Ces termes peuvent être acceptables s'ils décrivent factuellement, mais pas comme insultes pathologisantes"]
         }
-    },
-
-    // ========== T ==========
+    }
+};
+// ========== T ==========
     "tapé": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de fou, bizarre",
@@ -1835,6 +1894,167 @@ const DICTIONARY = {
             "Si sous traitement": ["Somnolent", "Ralenti", "Au ralenti"],
             "Si apathie": ["Apathique", "Léthargique", "Inactif", "Avachi", "Amorphe", "Sans énergie"]
         }
+    },
+
+    // ========================================
+    // EXPRESSIONS ET LOCUTIONS
+    // ========================================
+
+    "à la folie": {
+        "types": ["saniste"],
+        "intention": "Exprimer une passion intense, un amour extrême",
+        "problematique": "Utilise la 'folie' comme intensificateur positif, mais renforce quand même l'association entre émotions intenses et troubles mentaux.",
+        "alternatives": {
+            "Descriptions": ["Passionnément", "Éperdument", "Ardemment", "À en perdre la raison (attention, aussi problématique)", "Intensément", "Follement (même problème)", "Profondément", "De tout mon cœur", "De toute mon âme"],
+            "Poétiques": ["Jusqu'à l'ivresse", "Jusqu'au vertige", "Corps et âme"]
+        }
+    },
+
+    "c'est de la folie furieuse": {
+        "types": ["saniste"],
+        "intention": "Qualifier quelque chose d'excessif, absurde, dangereux",
+        "problematique": "Utilise 'folie' comme synonyme de danger ou d'absurdité. Le terme 'furieuse' renforce l'association folie = violence.",
+        "alternatives": {
+            "Descriptions": ["C'est de la pure démesure", "C'est démesuré", "C'est excessif", "C'est extrême", "C'est absurde", "C'est insensé", "C'est déraisonnable", "C'est dangereux", "C'est risqué", "C'est imprudent"],
+            "Inventions": ["C'est histrioncule"],
+            "Vieux français/littéraire": ["C'est rocambolesque (extravagant)"],
+            "Jurons": ["Fichtre !", "Sacrebleu !", "Quelle absurdité !", "Mazette !", "Morbleu !", "Tudieu !"],
+            "Ch'ti": ["Crénon des aulx !", "Sapristi !", "Saperlipopette !"],
+            "Occitan": ["Mila Diou !", "Boudu !"]
+        }
+    },
+
+    "c'est complètement malade": {
+        "types": ["saniste"],
+        "intention": "Qualifier quelque chose d'extrême (positif ou négatif)",
+        "problematique": "Utilise la maladie comme intensificateur, que ce soit positif ou négatif. Stigmatise la maladie.",
+        "alternatives": {
+            "Si positif": ["C'est extraordinaire", "Incroyable", "Phénoménal", "Prodigieux", "Stupéfiant"],
+            "Si négatif": ["C'est excessif", "Démesuré", "Extrême", "Absurde", "Insensé"],
+            "Descriptions": ["Extrême", "Intense", "Monumental", "Colossal"],
+            "Vieux français/littéraire": ["C'est rocambolesque (extravagant)"],
+            "Jurons": ["Fichtre !", "Sacrebleu !", "Mazette !", "Morbleu !", "Bigre !"],
+            "Ch'ti": ["Crénon des aulx !", "Saperlipopette !"],
+            "Occitan": ["Mila Diou !", "Boudu !"]
+        }
+    },
+
+    "un monde de fous": {
+        "types": ["saniste"],
+        "intention": "Dire que le monde est chaotique, absurde, incompréhensible",
+        "problematique": "Associe chaos et absurdité à la 'folie', renforce la stigmatisation.",
+        "alternatives": {
+            "Descriptions": ["Un monde chaotique", "Absurde", "Désordonné", "Un monde incompréhensible", "Déconcertant", "Un monde sens dessus dessous", "Quel chaos !", "Quelle pagaille !"],
+            "Inventions": ["Un monde farfelucratique", "Rocambolesque"],
+            "Jurons": ["Sacrebleu, quel monde !", "Fichtre !"]
+        }
+    },
+
+    "c'est fou ce que": {
+        "types": ["saniste"],
+        "intention": "Intensifier une affirmation (ex: 'c'est fou ce que tu lui ressembles')",
+        "problematique": "Utilise 'fou' comme intensificateur banal, normalise l'association folie = extrême.",
+        "alternatives": {
+            "Descriptions": ["C'est incroyable ce que", "C'est extraordinaire comme", "C'est impressionnant ce que", "C'est remarquable comme", "Quel(le)... ! (ex: 'Quelle ressemblance !')", "Tu ne peux pas imaginer à quel point"],
+            "Jurons": ["Fichtre ce que…", "Sacrebleu comme…"]
+        }
+    },
+
+    "comme un fou": {
+        "types": ["saniste"],
+        "intention": "Décrire une action faite de manière frénétique, intense (ex: 'courir comme un fou')",
+        "problematique": "Associe intensité et énergie à la 'folie'.",
+        "alternatives": {
+            "Descriptions": ["Frénétiquement", "Intensément", "Avec frénésie", "À toute allure", "À fond", "À toute vitesse", "Comme un(e) déchaîné(e)", "Comme un(e) possédé(e) (attention au 'possédé' selon contexte)", "Éperdument", "Avec toute son énergie", "De toutes ses forces"]
+        }
+    },
+
+    "rendre fou": {
+        "types": ["saniste"],
+        "intention": "Dire que quelque chose ou quelqu'un énerve, exaspère, obsède",
+        "problematique": "Suggère qu'on peut 'rendre' quelqu'un mentalement malade. Banalise les troubles mentaux.",
+        "alternatives": {
+            "Descriptions": ["Exaspérer", "Agacer", "Énerver profondément", "Obséder", "Occuper l'esprit constamment", "Rendre furieux", "Mettre hors de soi", "Faire perdre patience"],
+            "Créole": ["Rendre malfézan (méchant)"]
+        }
+    },
+
+    "avoir les nerfs": {
+        "types": ["saniste"],
+        "intention": "Exprimer qu'on est très énervé, stressé, à bout",
+        "problematique": "Peut renvoyer aux 'troubles nerveux' (ancien terme pour troubles mentaux/anxieux). Pathologise le stress.",
+        "alternatives": {
+            "Descriptions": ["Être très énervé", "Très stressé", "Très tendu", "Être à bout", "Au bout du rouleau", "Exaspéré", "À cran", "Irritable", "À fleur de peau"],
+            "Exclamation": ["Ça suffit !", "Stop !", "Assez !"],
+            "Ch'ti": ["Crénon !", "Sapristi !"]
+        }
+    },
+
+    "ça me rend malade": {
+        "types": ["saniste"],
+        "intention": "Exprimer qu'une situation nous affecte profondément, nous dégoûte, nous attriste",
+        "problematique": "Utilise la maladie comme métaphore de détresse émotionnelle. Banalise la maladie réelle.",
+        "alternatives": {
+            "Descriptions": ["Ça me révolte", "Ça me dégoûte", "Ça m'affecte profondément", "J'en suis bouleversé", "Retourné", "Profondément touché", "Ça me met hors de moi", "Ça m'indigne", "Ça me fait mal", "Ça me pèse"],
+            "Poétiques": ["Ça me brise le cœur", "Ça me ronge"]
+        }
+    },
+
+    "c'est maladif": {
+        "types": ["saniste"],
+        "intention": "Qualifier une obsession, une habitude très forte",
+        "problematique": "Pathologise des comportements ou passions intenses. Utilise 'malade' comme jugement négatif.",
+        "alternatives": {
+            "Descriptions": ["Excessif", "Démesuré", "À l'excès", "Intense", "Poussé à l'extrême", "Envahissant", "Omniprésent"]
+        }
+    },
+
+    "ne plus avoir de jambes": {
+        "types": ["validiste"],
+        "intention": "Exprimer une grande fatigue physique, des jambes faibles",
+        "problematique": "Utilise l'absence/faiblesse des jambes comme métaphore de fatigue. Peut être blessant pour les personnes amputées ou à mobilité réduite.",
+        "alternatives": {
+            "Descriptions": ["Épuisé", "Exténué", "Fourbu", "Éreinté", "Les jambes lourdes", "Les jambes fatiguées", "À bout de forces", "Sans énergie", "Ne plus pouvoir avancer"]
+        }
+    },
+
+    "c'est handicapant": {
+        "types": ["validiste"],
+        "intention": "Dire que quelque chose gêne, entrave, complique",
+        "problematique": "Utilise 'handicapant' pour des gênes mineures, banalise le handicap réel. Le handicap n'est pas une métaphore.",
+        "alternatives": {
+            "Descriptions": ["Gênant", "Contraignant", "Entravant", "Limitant", "Compliqué", "Problématique", "Difficile", "Qui pose problème", "Qui freine", "Pénalisant", "Désavantageux"]
+        }
+    },
+
+    "ça pue la maladie mentale": {
+        "types": ["saniste"],
+        "intention": "Juger très négativement un comportement en l'associant aux troubles mentaux",
+        "problematique": "Extrêmement violent. Associe troubles mentaux à quelque chose de répugnant. Déshumanise les personnes concernées.",
+        "alternatives": {
+            "Descriptions": ["Ce comportement est problématique", "Inquiétant", "Préoccupant", "Ça me semble malsain", "Toxique", "Destructeur", "Décrire le comportement précis sans référence à la santé mentale"],
+            "MIEUX": ["Ne JAMAIS associer santé mentale à 'puanteur' ou répugnance"]
+        }
+    },
+
+    "tomber dans les pommes": {
+        "types": ["validiste"],
+        "intention": "Dire que quelqu'un s'évanouit, perd connaissance",
+        "problematique": "Expression qui peut banaliser les malaises et évanouissements, conditions médicales qui peuvent être graves (hypoglycémie, problèmes cardiaques, etc.). Moins violente que d'autres expressions mais à utiliser avec précaution selon le contexte.",
+        "alternatives": {
+            "Descriptions": ["S'évanouir", "Perdre connaissance (termes factuels et neutres)", "Faire un malaise (factuel)", "Défaillir (littéraire)"],
+            "NOTE": ["'Tomber dans les pommes' reste relativement acceptable dans un usage familier non moqueur, mais les alternatives factuelles sont préférables dans un contexte médical ou sérieux"]
+        }
+    },
+
+    "péter une durite": {
+        "types": ["saniste"],
+        "intention": "Dire que quelqu'un s'énerve fortement, 'perd les pédales', devient 'fou'",
+        "problematique": "Métaphore mécanique/automobile du dysfonctionnement cérébral. Compare le cerveau à un moteur défectueux. Déshumanise et pathologise la colère ou le stress.",
+        "alternatives": {
+            "Descriptions": ["S'emporter", "S'énerver fortement", "Exploser", "Perdre son calme", "Son sang-froid", "Réagir vivement", "Violemment", "Sortir de ses gonds"],
+            "NOTE": ["Variante de 'péter un câble/plomb', même problématique"]
+        }
     }
 };
 // ========================================
@@ -1958,6 +2178,45 @@ const TEXTES = {
             
             <p>Ces discriminations s'entrecroisent souvent (une personne peut subir simultanément validisme, capacitisme et sanisme) et s'articulent avec d'autres oppressions (sexisme, racisme, âgisme, classisme, LGBTIphobie, etc.), créant des situations de discriminations multiples et imbriquées.</p>
         `
+reappropriation: `
+    <h2>Réappropriation, retournement du stigmate et autodétermination</h2>
+    <p>Les personnes concernées par le handicap ou les troubles de santé mentale ont le droit absolu de se définir comme elles l'entendent et de réutiliser pour elles-mêmes des termes stigmatisants si elles le souhaitent.</p>
+    
+    <p>Cette pratique, théorisée notamment par le sociologue Erving Goffman dans <em>Stigmate</em> (1963), s'appelle la réappropriation ou le retournement du stigmate : elle consiste à reprendre possession d'une insulte ou d'un terme médical pour lui enlever son pouvoir oppressif et en faire un outil d'affirmation politique et identitaire.</p>
+    
+    <h3>Une stratégie de lutte transversale</h3>
+    <p>Cette stratégie de réappropriation traverse toutes les luttes contre les discriminations. <strong>Joséphine Baker</strong>, par exemple, a détourné et réapproprié les stéréotypes racistes et coloniaux de la "sauvagerie" dans ses performances pour mieux les subvertir et affirmer sa puissance artistique et politique.</p>
+    
+    <p>De la même manière, les mouvements LGBTQI+ ont réapproprié "queer", "gouine" ou "pédé", les féministes ont retourné "sorcière", et les personnes racisées ont repris le contrôle de termes qui les désignaient.</p>
+    
+    <h3>Les cultures crip et mad</h3>
+    <p>Dans les pays anglophones, les mouvements <strong>crip</strong> (de cripple, "estropié") et <strong>mad</strong> ("fou") incarnent cette réappropriation radicale.</p>
+    
+    <p>Inspirés des travaux fondateurs des <strong>Disability Studies</strong> (notamment ceux de <strong>Rosemarie Garland-Thomson</strong>, <strong>Lennard Davis</strong>, ou <strong>Robert McRuer</strong>), ces mouvements affirment fièrement des identités longtemps niées ou pathologisées. En France, des collectifs comme le <strong>CLE Autistes</strong>, des militant·es handis ou psys reprennent aussi ces termes ("nous les fous", "nous les handicapés") dans une démarche de fierté et de lutte politique.</p>
+    
+    <h3>Une démarche politique collective</h3>
+    <p>La réappropriation n'est pas qu'individuelle : c'est un acte politique collectif qui vise à :</p>
+    <ul>
+        <li>Déstabiliser les normes oppressives (validistes, sanistes, racistes, sexistes...)</li>
+        <li>Affirmer une identité positive face à la stigmatisation</li>
+        <li>Créer de la solidarité et du pouvoir d'agir entre personnes concernées</li>
+        <li>Contester le monopole des institutions (médicales, coloniales, patriarcales...) sur la définition des identités minorisées.</li>
+    </ul>
+    
+    <p>Comme l'analysent les chercheuses féministes et disability studies (<strong>Marta Russell</strong>, <strong>Sunaura Taylor</strong>, ou en France <strong>Myriam Winance</strong>, <strong>Isabelle Ville</strong>), cette réappropriation s'inscrit dans une longue tradition de luttes émancipatrices où les groupes opprimés reprennent le contrôle du langage qui les désigne.</p>
+    
+    <h3>Attention</h3>
+    <p><strong>Ce n'est pas parce qu'une personne concernée utilise un terme pour elle-même que les personnes non-concernées peuvent l'utiliser librement.</strong></p>
+    
+    <p>La réappropriation est un droit qui appartient aux personnes discriminées.</p>
+    
+    <p>Les personnes valides ou sans trouble psy ne peuvent pas se servir de cette réappropriation pour justifier leur usage de termes validistes ou sanistes.</p>
+    
+    <p>C'est la même logique que dans les luttes antiracistes, LGBTQI+ ou féministes.</p>
+    
+    <p><strong>"Rien sur nous sans nous"</strong> (Nothing about us without us), slogan historique du mouvement handicap depuis les années 1990.</p>
+`
+
     },
 
     hallOfShame: `
@@ -1995,6 +2254,7 @@ const TEXTES = {
         <p><strong>Morale :</strong> Ces exemples viennent tous de la droite et de l'extrême-droite. Service public, candidats à la présidentielle, ministres... Le validisme existe partout, mais il est particulièrement présent et décomplexé dans ces milieux. C'est pour cela qu'un travail sur notre langage quotidien est essentiel. Parbleu !</p>
     `
 };
+
 // ========================================
 // ALTERNATIVES COMPLÈTES
 // ========================================
@@ -2094,272 +2354,255 @@ const ALTERNATIVES = {
                 <li><strong>Sofocrate</strong> – <em>sophos + kratos</em> – se croit sage et impose ses idées</li>
                 <li><strong>Tartignolard</strong> – <em>tartignole</em> – ridicule prétentieux, fanfaron</li>
                 <li><strong>Tartufolique</strong> – <em>Tartuffe + philos</em> – faux dévot, hypocrite à l'excès</li>
-                <li><strong>Tic-taculeux</strong> – <em>tic-tac + suffixe</em> – obsessionnel sur les détails chronométriques</li>
-                <li><strong>Ventripotent</strong> – <em>venter + potent</em> – exubérant, prétentieux et gourmand</li>
-                <li><strong>Vaporfique</strong> – <em>vapor + ficus</em> – qui disparaît quand les problèmes arrivent</li>
-                <li><strong>Vapulotomique</strong> – <em>vapor + luto + tomique</em> – qui fait beaucoup de bruit pour rien</li>
-                <li><strong>Vexibond</strong> – <em>vexare + bondire</em> – qui s'indigne pour un rien, excessif</li>
-                <li><strong>Verboplecte</strong> – <em>verbum + plectere</em> – s'emmêle dans ses propres mots</li>
-                <li><strong>Xénophilophobe</strong> – <em>xeno + philo + phobe</em> – aime haïr ceux qui ne lui ressemblent pas</li>
-                <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li>
-            </ul>
-        `
-    },
-
-    regionaux: {
-        titre: "Tour de France des insultes régionales non oppressives",
-        sections: {
-            alsacien: {
-                titre: "ALSACIEN (les plus drôles !)",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Cervilagingel :</strong> Asticot à cervelas</li>
-                        <li><strong>Hànswurscht :</strong> Jean Saucisse</li>
-                        <li><strong>Dräckspatz :</strong> Sale moineau, souillon</li>
-                        <li><strong>Beerflaschebrunzer :</strong> Pisseur de bouteille de bière</li>
-                        <li><strong>Johmeri :</strong> Quelqu'un qui se plaint beaucoup</li>
-                        <li><strong>Lewerworschtsauer :</strong> Saucisse de foie vexée (quelqu'un qui boude!)</li>
-                        <li><strong>Falscherseckel :</strong> Faux-cul</li>
-                        <li><strong>Putzfrawecasanova :</strong> Playboy des femmes de ménages</li>
-                        <li><strong>Stinkmichel :</strong> Michel qui pue</li>
-                         <li><strong>Fleischkiechleschiesser :</strong> déféqueur de boulette de viande</li>
-                        <li><strong>Zewalla pfurz :</strong> Pet d'oignon</li>
-                    </ul>
-                `
-            },
-            breton: {
-                titre: "BRETON",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Kaoc'h :</strong> Merde</li>
-                        <li><strong>Penn-kaoc'h :</strong> Tête de…</li>
-                        <li><strong>Torr-revr :</strong> orchidoclaste</li>
-                        <li><strong>Gaouyaer :</strong> Menteur</li>
-                        <li><strong>Krog :</strong> Accro, avare (qui accroche/retient tout)</li>
-                        <li><strong>Pennkaled :</strong> Tête dure (têtu, obstiné)</li>
-                        <li><strong>Brezhoneg :</strong> Bavard (littéralement "breton", usage ironique)</li>
-                        <li><strong>Droukdener :</strong> Mauvais caractère</li>
-                        <li><strong>Breinañ :</strong> Pourri (personne corrompue)</li>
-                        <li><strong>Skluj :</strong> Sale, crasseux</li>
-                    </ul>
-                    <h4>Jurons d'exaspération :</h4>
-                    <ul class="alternatives-list">
-                        <li>Diaoul ! : Diable !</li>
-                        <li>Mallozh ! : Malédiction !</li>
-                        <li>Taol Doue ! : Par Dieu !</li>
-                        <li>Souden ! : Sacré ! Fichtre !</li>
-                    </ul>
-                    <h4>Expressions :</h4>
-                    <ul class="alternatives-list">
-                        <li>Kaoc'h ki : Merde de chien (intensificateur)</li>
-                        <li>Kaoc'h bara : Croûte de pain (personne insignifiante)</li>
-                    </ul>
-                `
-            },
-            chti: {
-                titre: "CH'TI / PICARD",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Caronne :</strong> Charogne (personne désagréable)</li>
-                        <li><strong>Caboche :</strong> Mauvaise tête</li>
-                        <li><strong>Babelle :</strong> Bavard</li>
-                        <li><strong>Merlaud / Marlou :</strong> Voyou, filou</li>
-                        <li><strong>Rabouilleux :</strong> Qui fait du désordre, brouillon</li>
-                        <li><strong>Braillard :</strong> Qui crie, gueulard</li>
-                        <li><strong>Racro :</strong> Sale, crasseux</li>
-                        <li><strong>Fricoteux :</strong> Magouilleur, qui combine</li>
-                        <li><strong>Chicaneux :</strong> Qui cherche la petite bête, querelleur</li>
-                    </ul>
-                    <h4>Expressions :</h4>
-                    <ul class="alternatives-list">
-                        <li>Crénon des aulx !</li>
-                        <li>Sapristi !</li>
-                        <li>Saperlotte !</li>
-                        <li>Saperlipopette !</li>
-                        <li>Saquernon !</li>
-                    </ul>
-                `
-            },
-            corse: {
-                titre: "CORSE",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Testa di legnu :</strong> Tête de bois (têtu, borné)</li>
-                        <li><strong>Sciacquone / Sciacquetta :</strong> Bon à rien, fainéant</li>
-                        <li><strong>Storditu :</strong> Étourdi, distrait</li>
-                        <li><strong>Ciccarone :</strong> Bavard, commère</li>
-                        <li><strong>Furbacchione :</strong> Petit malin, rusé (peut être péjoratif)</li>
-                        <li><strong>Sgarbatu :</strong> Grossier, malpoli</li>
-                        <li><strong>Taccagnu :</strong> Radin, avare</li>
-                        <li><strong>Strambacciu :</strong> Bizarre, excentrique</li>
-                        <li><strong>Leccapiatti :</strong> Lèche-assiette (flatteur, opportuniste)</li>
-                        <li><strong>Sfaccendatu :</strong> Indiscret, fouineur</li>
-                    </ul>
-                    <h4>Jurons d'exaspération (non dirigés) :</h4>
-                    <ul class="alternatives-list">
-                        <li>Porca miseria ! : Misère !</li>
-                        <li>Accidenti ! : Zut ! Mince !</li>
-                        <li>Mannaggia ! : Bon sang !</li>
-                    </ul>
-                `
-            },
-            creoleAntillais: {
-                titre: "CRÉOLE ANTILLAIS (Martinique/Guadeloupe)",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Makro / Spèce makro :</strong> Salaud</li>
-                        <li><strong>Koken :</strong> Coquin au sens de malhonnête</li>
-                        <li><strong>Malfézan :</strong> Méchant</li>
-                        <li><strong>Malparlan :</strong> Médisant</li>
-                        <li><strong>Mantò :</strong> Menteur</li>
-                        <li><strong>Kanay :</strong> Canaille</li>
-                        <li><strong>Isalòp :</strong> Personne sans scrupule</li>
-                        <li><strong>Fouyaya :</strong> Curieux, fouineur</li>
-                        <li><strong>Grimèl :</strong> Avare, radin</li>
-                        <li><strong>Mové lang :</strong> Mauvaise langue, commère</li>
-                        <li><strong>Enkont :</strong> Importun, casse-pieds</li>
-                        <li><strong>Fòdjèl :</strong> Prétentieux, m'as-tu-vu</li>
-                        <li><strong>Tchenbè :</strong> Profiteur, qui s'accroche</li>
-                        <li><strong>Kouto anba do :</strong> Traître (couteau sous le dossier)</li>
-                        <li><strong>Jennfoutè :</strong> Je-m'en-foutiste, négligent</li>
-                        <li><strong>Tcholéré :</strong> Tête brûlée, impulsif</li>
-                        <li><strong>Kalkile :</strong> Calculateur, manipulateur</li>
-                    </ul>
-                `
-            },
-            creoleReunionnais: {
-                titre: "CRÉOLE RÉUNIONNAIS",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Malpròp :</strong> Malpropre</li>
-                        <li><strong>Malélivé :</strong> Mal élevé</li>
-                        <li><strong>Fronté :</strong> Effronté</li>
-                        <li><strong>Malonèt :</strong> Malhonnête</li>
-                        <li><strong>Laper :</strong> Bavard, rapporteur</li>
-                        <li><strong>Grin dan :</strong> Avare (qui grince des dents)</li>
-                        <li><strong>Gratèr :</strong> Profiteur, parasite</li>
-                        <li><strong>Mové kèr :</strong> Mauvais cœur, méchant</li>
-                        <li><strong>Kapon :</strong> Peureux, lâche</li>
-                        <li><strong>Mangfonnkèr :</strong> Traître (mange le fond du cœur)</li>
-                    </ul>
-                `
-            },
-            normand: {
-                titre: "NORMANDIE (Normand/Cauchois)",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Fretlaúmpi :</strong> Voyou, contrebandier</li>
-                        <li><strong>Grand sicot :</strong> Vaurien</li>
-                        <li><strong>Caboche :</strong> Fort caractère, forte tête</li>
-                        <li><strong>Babelle :</strong> Bavard</li>
-                        <li><strong>Balochard :</strong> Traîne-savate, bon à rien</li>
-                        <li><strong>Marle :</strong> Filou, rusé</li>
-                        <li><strong>Rapiat :</strong> Avare, radin</li>
-                        <li><strong>Grosse tête :</strong> Prétentieux, orgueilleux</li>
-                        <li><strong>Maufaisant :</strong> Malfaisant, méchant</li>
-                        <li><strong>Gratoui :</strong> Gratteur, profiteur</li>
-                        <li><strong>Braillard :</strong> Gueulard, criard</li>
-                        <li><strong>Fricoteux :</strong> Magouilleur, combinard</li>
-                        <li><strong>Chicaneux :</strong> Qui cherche querelle, râleur</li>
-                        <li><strong>Malpropre :</strong> Sale, crasseux</li>
-                        <li><strong>Boueux :</strong> Boueux, salissant (personne qui fait du désordre)</li>
-                    </ul>
-                `
-            },
-            occitan: {
-                titre: "OCCITAN / PATOIS DU SUD-OUEST",
-                contenu: `
-                    <ul class="alternatives-list">
-                        <li><strong>Mila Diou / Milla Dious :</strong> Mille dieux !</li>
-                        <li><strong>Boudu :</strong> Bon Dieu (exclamation)</li>
-                        <li><strong>Mascagnaïre :</strong> Quelqu'un qui gâte son travail</li>
-                        <li><strong>Rouméguer :</strong> Râler</li>
-                        <li><strong>Cagaire :</strong> Froussard, peureux</li>
-                        <li><strong>Bausièr :</strong> Menteur, hâbleur</li>
-                        <li><strong>Galapian :</strong> Vaurien, garnement</li>
-                        <li><strong>Babòt :</strong> Bavard, qui parle pour ne rien dire</li>
-                        <li><strong>Malin :</strong> Rusé, sournois (sens péjoratif)</li>
-                        <li><strong>Pantaïaire :</strong> Qui traîne, lambin</li>
-                        <li><strong>Escagarlacha :</strong> Débrouillard malhonnête, magouilleur</li>
-                        <li><strong>Cacarassaire :</strong> Commère, cancanier</li>
-                        <li><strong>Malavesit :</strong> Mal avisé, qui fait des bêtises</li>
-                        <li><strong>Grapaud :</strong> Avare, radin</li>
-                        <li><strong>Tòrt :</strong> malhonnête</li>
-                        <li><strong>Ganhaire :</strong> Profiteur, qui cherche son intérêt</li>
-                        <li><strong>Esperluquet :</strong> Étourdi, évaporé</li>
-                        <li><strong>Braguèt :</strong> Prétentieux, frimeur</li>
-                    </ul>
-                    <h4>Jurons supplémentaires :</h4>
-                    <ul class="alternatives-list">
-                        <li>Pèr de Diu ! : Par Dieu !</li>
-                        <li>Caspita ! : Fichtre !</li>
-                    </ul>
-                `
-            }
+                <li><strong>Tic-taculeux</strong> – <em>tic-tac + suffixe</em> – obsessionnel sur les détails chronométriques</li> <li><strong>Ventripotent</strong> – <em>venter + potent</em> – exubérant, prétentieux et gourmand</li> <li><strong>Vaporfique</strong> – <em>vapor + ficus</em> – qui disparaît quand les problèmes arrivent</li> <li><strong>Vapulotomique</strong> – <em>vapor + luto + tomique</em> – qui fait beaucoup de bruit pour rien</li> <li><strong>Vexibond</strong> – <em>vexare + bondire</em> – qui s'indigne pour un rien, excessif</li> <li><strong>Verboplecte</strong> – <em>verbum + plectere</em> – s'emmêle dans ses propres mots</li> <li><strong>Xénophilophobe</strong> – <em>xeno + philo + phobe</em> – aime haïr ceux qui ne lui ressemblent pas</li> <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li> </ul> ` },
+regionaux: {
+    titre: "Tour de France des insultes régionales non oppressives",
+    sections: {
+        alsacien: {
+            titre: "ALSACIEN (les plus drôles !)",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Cervilagingel :</strong> Asticot à cervelas</li>
+                    <li><strong>Hànswurscht :</strong> Jean Saucisse</li>
+                    <li><strong>Dräckspatz :</strong> Sale moineau, souillon</li>
+                    <li><strong>Beerflaschebrunzer :</strong> Pisseur de bouteille de bière</li>
+                    <li><strong>Johmeri :</strong> Quelqu'un qui se plaint beaucoup</li>
+                    <li><strong>Lewerworschtsauer :</strong> Saucisse de foie vexée (quelqu'un qui boude!)</li>
+                    <li><strong>Falscherseckel :</strong> Faux-cul</li>
+                    <li><strong>Putzfrawecasanova :</strong> Playboy des femmes de ménages</li>
+                    <li><strong>Stinkmichel :</strong> Michel qui pue</li>
+                    <li><strong>Fleischkiechleschiesser :</strong> déféqueur de boulette de viande</li>
+                    <li><strong>Zewalla pfurz :</strong> Pet d'oignon</li>
+                </ul>
+            `
+        },
+        breton: {
+            titre: "BRETON",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Kaoc'h :</strong> Merde</li>
+                    <li><strong>Penn-kaoc'h :</strong> Tête de…</li>
+                    <li><strong>Torr-revr :</strong> orchidoclaste</li>
+                    <li><strong>Gaouyaer :</strong> Menteur</li>
+                    <li><strong>Krog :</strong> Accro, avare (qui accroche/retient tout)</li>
+                    <li><strong>Pennkaled :</strong> Tête dure (têtu, obstiné)</li>
+                    <li><strong>Brezhoneg :</strong> Bavard (littéralement "breton", usage ironique)</li>
+                    <li><strong>Droukdener :</strong> Mauvais caractère</li>
+                    <li><strong>Breinañ :</strong> Pourri (personne corrompue)</li>
+                    <li><strong>Skluj :</strong> Sale, crasseux</li>
+                </ul>
+                <h4>Jurons d'exaspération :</h4>
+                <ul class="alternatives-list">
+                    <li>Diaoul ! : Diable !</li>
+                    <li>Mallozh ! : Malédiction !</li>
+                    <li>Taol Doue ! : Par Dieu !</li>
+                    <li>Souden ! : Sacré ! Fichtre !</li>
+                </ul>
+                <h4>Expressions :</h4>
+                <ul class="alternatives-list">
+                    <li>Kaoc'h ki : Merde de chien (intensificateur)</li>
+                    <li>Kaoc'h bara : Croûte de pain (personne insignifiante)</li>
+                </ul>
+            `
+        },
+        chti: {
+            titre: "CH'TI / PICARD",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Caronne :</strong> Charogne (personne désagréable)</li>
+                    <li><strong>Caboche :</strong> Mauvaise tête</li>
+                    <li><strong>Babelle :</strong> Bavard</li>
+                    <li><strong>Merlaud / Marlou :</strong> Voyou, filou</li>
+                    <li><strong>Rabouilleux :</strong> Qui fait du désordre, brouillon</li>
+                    <li><strong>Braillard :</strong> Qui crie, gueulard</li>
+                    <li><strong>Racro :</strong> Sale, crasseux</li>
+                    <li><strong>Fricoteux :</strong> Magouilleur, qui combine</li>
+                    <li><strong>Chicaneux :</strong> Qui cherche la petite bête, querelleur</li>
+                </ul>
+                <h4>Expressions :</h4>
+                <ul class="alternatives-list">
+                    <li>Crénon des aulx !</li>
+                    <li>Sapristi !</li>
+                    <li>Saperlotte !</li>
+                    <li>Saperlipopette !</li>
+                    <li>Saquernon !</li>
+                </ul>
+            `
+        },
+        corse: {
+            titre: "CORSE",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Testa di legnu :</strong> Tête de bois (têtu, borné)</li>
+                    <li><strong>Sciacquone / Sciacquetta :</strong> Bon à rien, fainéant</li>
+                    <li><strong>Storditu :</strong> Étourdi, distrait</li>
+                    <li><strong>Ciccarone :</strong> Bavard, commère</li>
+                    <li><strong>Furbacchione :</strong> Petit malin, rusé (peut être péjoratif)</li>
+                    <li><strong>Sgarbatu :</strong> Grossier, malpoli</li>
+                    <li><strong>Taccagnu :</strong> Radin, avare</li>
+                    <li><strong>Strambacciu :</strong> Bizarre, excentrique</li>
+                    <li><strong>Leccapiatti :</strong> Lèche-assiette (flatteur, opportuniste)</li>
+                    <li><strong>Sfaccendatu :</strong> Indiscret, fouineur</li>
+                </ul>
+                <h4>Jurons d'exaspération (non dirigés) :</h4>
+                <ul class="alternatives-list">
+                    <li>Porca miseria ! : Misère !</li>
+                    <li>Accidenti ! : Zut ! Mince !</li>
+                    <li>Mannaggia ! : Bon sang !</li>
+                </ul>
+            `
+        },
+        creoleAntillais: {
+            titre: "CRÉOLE ANTILLAIS (Martinique/Guadeloupe)",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Makro / Spèce makro :</strong> Salaud</li>
+                    <li><strong>Koken :</strong> Coquin au sens de malhonnête</li>
+                    <li><strong>Malfézan :</strong> Méchant</li>
+                    <li><strong>Malparlan :</strong> Médisant</li>
+                    <li><strong>Mantò :</strong> Menteur</li>
+                    <li><strong>Kanay :</strong> Canaille</li>
+                    <li><strong>Isalòp :</strong> Personne sans scrupule</li>
+                    <li><strong>Fouyaya :</strong> Curieux, fouineur</li>
+                    <li><strong>Grimèl :</strong> Avare, radin</li>
+                    <li><strong>Mové lang :</strong> Mauvaise langue, commère</li>
+                    <li><strong>Enkont :</strong> Importun, casse-pieds</li>
+                    <li><strong>Fòdjèl :</strong> Prétentieux, m'as-tu-vu</li>
+                    <li><strong>Tchenbè :</strong> Profiteur, qui s'accroche</li>
+                    <li><strong>Kouto anba do :</strong> Traître (couteau sous le dossier)</li>
+                    <li><strong>Jennfoutè :</strong> Je-m'en-foutiste, négligent</li>
+                    <li><strong>Tcholéré :</strong> Tête brûlée, impulsif</li>
+                    <li><strong>Kalkile :</strong> Calculateur, manipulateur</li>
+                </ul>
+            `
+        },
+        creoleReunionnais: {
+            titre: "CRÉOLE RÉUNIONNAIS",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Malpròp :</strong> Malpropre</li>
+                    <li><strong>Malélivé :</strong> Mal élevé</li>
+                    <li><strong>Fronté :</strong> Effronté</li>
+                    <li><strong>Malonèt :</strong> Malhonnête</li>
+                    <li><strong>Laper :</strong> Bavard, rapporteur</li>
+                    <li><strong>Grin dan :</strong> Avare (qui grince des dents)</li>
+                    <li><strong>Gratèr :</strong> Profiteur, parasite</li>
+                    <li><strong>Mové kèr :</strong> Mauvais cœur, méchant</li>
+                    <li><strong>Kapon :</strong> Peureux, lâche</li>
+                    <li><strong>Mangfonnkèr :</strong> Traître (mange le fond du cœur)</li>
+                </ul>
+            `
+        },
+        normand: {
+            titre: "NORMANDIE (Normand/Cauchois)",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Fretlaúmpi :</strong> Voyou, contrebandier</li>
+                    <li><strong>Grand sicot :</strong> Vaurien</li>
+                    <li><strong>Caboche :</strong> Fort caractère, forte tête</li>
+                    <li><strong>Babelle :</strong> Bavard</li>
+                    <li><strong>Balochard :</strong> Traîne-savate, bon à rien</li>
+                    <li><strong>Marle :</strong> Filou, rusé</li>
+                    <li><strong>Rapiat :</strong> Avare, radin</li>
+                    <li><strong>Grosse tête :</strong> Prétentieux, orgueilleux</li>
+                    <li><strong>Maufaisant :</strong> Malfaisant, méchant</li>
+                    <li><strong>Gratoui :</strong> Gratteur, profiteur</li>
+                    <li><strong>Braillard :</strong> Gueulard, criard</li>
+                    <li><strong>Fricoteux :</strong> Magouilleur, combinard</li>
+                    <li><strong>Chicaneux :</strong> Qui cherche querelle, râleur</li>
+                    <li><strong>Malpropre :</strong> Sale, crasseux</li>
+                    <li><strong>Boueux :</strong> Boueux, salissant (personne qui fait du désordre)</li>
+                </ul>
+            `
+        },
+        occitan: {
+            titre: "OCCITAN / PATOIS DU SUD-OUEST",
+            contenu: `
+                <ul class="alternatives-list">
+                    <li><strong>Mila Diou / Milla Dious :</strong> Mille dieux !</li>
+                    <li><strong>Boudu :</strong> Bon Dieu (exclamation)</li>
+                    <li><strong>Mascagnaïre :</strong> Quelqu'un qui gâte son travail</li>
+                    <li><strong>Rouméguer :</strong> Râler</li>
+                    <li><strong>Cagaire :</strong> Froussard, peureux</li>
+                    <li><strong>Bausièr :</strong> Menteur, hâbleur</li>
+                    <li><strong>Galapian :</strong> Vaurien, garnement</li>
+                    <li><strong>Babòt :</strong> Bavard, qui parle pour ne rien dire</li>
+                    <li><strong>Malin :</strong> Rusé, sournois (sens péjoratif)</li>
+                    <li><strong>Pantaïaire :</strong> Qui traîne, lambin</li>
+                    <li><strong>Escagarlacha :</strong> Débrouillard malhonnête, magouilleur</li>
+                    <li><strong>Cacarassaire :</strong> Commère, cancanier</li>
+                    <li><strong>Malavesit :</strong> Mal avisé, qui fait des bêtises</li>
+                    <li><strong>Grapaud :</strong> Avare, radin</li>
+                    <li><strong>Tòrt :</strong> malhonnête</li>
+                    <li><strong>Ganhaire :</strong> Profiteur, qui cherche son intérêt</li>
+                    <li><strong>Esperluquet :</strong> Étourdi, évaporé</li>
+                    <li><strong>Braguèt :</strong> Prétentieux, frimeur</li>
+                </ul>
+                <h4>Jurons supplémentaires :</h4>
+                <ul class="alternatives-list">
+                    <li>Pèr de Diu ! : Par Dieu !</li>
+                    <li>Caspita ! : Fichtre !</li>
+                </ul>
+            `
         }
-    },
-descriptions: {
-        titre: "Descriptions factuelles de comportements problématiques",
-        contenu: `
-            <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
-            <ul class="alternatives-list">
-                <li>Tu mens / Tu es malhonnête</li>
-                <li>Tu es violent / agressif</li>
-                <li>Tu es irrespectueux / impoli / grossier</li>
-                <li>Tu es méprisant / condescendant</li>
-                <li>Tu manipules / Tu es manipulateur</li>
-                <li>Tu es cruel / impitoyable / insensible</li>
-            </ul>
-        `
-    },
-
-    jurons: {
-        titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
-        contenu: `
-            <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
-            <p>Bougre !</p>
-            <p>Ça alors ! Ciel ! Corbleu ! Crénom ! Crédié !</p>
-            <p>Diable ! Diantre ! Doux Jésus !</p>
-            <p>Fichtre ! Fichtre bougre ! Fichtre diantre ! Fichtre dieu !</p>
-            <p>Grands dieux !</p>
-            <p>Jarnibleu ! Jarnidieu !</p>
-            <p>Ma parole ! Macache ! Mâtin ! Mazette ! Mazette alors ! Mille sabords ! Mille tonnerres ! Miséricorde ! Morbleu !</p>
-            <p>Nom d'un petit bonhomme ! Nom d'une pipe !</p>
-            <p>Palsambleu ! Par exemple ! Peste !</p>
-            <p>Que diable !</p>
-            <p>Sacrebleu ! Sacreblotte ! Saperlipopette ! Saperlotte !</p>
-            <p>Sapristi !</p>
-            <p>Tonnerre ! Tudieu !</p>
-            <p>Ventrebleu ! Vertubleu !</p>
-        `
-    },
-
-    conclusion: {
-        titre: "Conclusion",
-        contenu: `
-            <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
-            
-            <p>Changer son vocabulaire n'est pas de la censure : c'est :</p>
-            <ul>
-                <li>Enrichir sa langue</li>
-                <li>Affiner sa pensée</li>
-                <li>Respecter la dignité de chacun·e</li>
-                <li>Insulter avec CLASSE et créativité</li>
-            </ul>
-
-            <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
-            <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
-        `
     }
-};
+},
 
-// ========================================
-// EXPORT POUR UTILISATION DANS L'APP
-// ========================================
+descriptions: {
+    titre: "Descriptions factuelles de comportements problématiques",
+    contenu: `
+        <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
+        <ul class="alternatives-list">
+            <li>Tu mens / Tu es malhonnête</li>
+            <li>Tu es violent / agressif</li>
+            <li>Tu es irrespectueux / impoli / grossier</li>
+            <li>Tu es méprisant / condescendant</li>
+            <li>Tu manipules / Tu es manipulateur</li>
+            <li>Tu es cruel / impitoyable / insensible</li>
+        </ul>
+    `
+},
 
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { DICTIONARY, TEXTES, ALTERNATIVES };
+jurons: {
+    titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
+    contenu: `
+        <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
+        <p>Bougre !</p>
+        <p>Ça alors ! Ciel ! Corbleu ! Crénom ! Crédié !</p>
+        <p>Diable ! Diantre ! Doux Jésus !</p>
+        <p>Fichtre ! Fichtre bougre ! Fichtre diantre ! Fichtre dieu !</p>
+        <p>Grands dieux !</p>
+        <p>Jarnibleu ! Jarnidieu !</p>
+        <p>Ma parole ! Macache ! Mâtin ! Mazette ! Mazette alors ! Mille sabords ! Mille tonnerres ! Miséricorde ! Morbleu !</p>
+        <p>Nom d'un petit bonhomme ! Nom d'une pipe !</p>
+        <p>Palsambleu ! Par exemple ! Peste !</p>
+        <p>Que diable !</p>
+        <p>Sacrebleu ! Sacreblotte ! Saperlipopette ! Saperlotte !</p>
+        <p>Sapristi !</p>
+        <p>Tonnerre ! Tudieu !</p>
+        <p>Ventrebleu ! Vertubleu !</p>
+    `
+},
+
+conclusion: {
+    titre: "Conclusion",
+    contenu: `
+        <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
+        
+        <p>Changer son vocabulaire n'est pas de la censure : c'est :</p>
+        <ul>
+            <li>Enrichir sa langue</li>
+            <li>Affiner sa pensée</li>
+            <li>Respecter la dignité de chacun·e</li>
+            <li>Insulter avec CLASSE et créativité</li>
+        </ul>
+
+        <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
+        <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
+    `
 }
-
+};
+// ======================================== // EXPORT POUR UTILISATION DANS L'APP // ========================================
+if (typeof module !== 'undefined' && module.exports) { module.exports = { DICTIONARY, TEXTES, ALTERNATIVES }; }
 
 
