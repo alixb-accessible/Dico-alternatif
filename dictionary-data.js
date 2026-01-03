@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 /* ========================================
    BASE DE DONNÉES COMPLÈTE DU DICTIONNAIRE
    Tous les termes, expressions et alternatives
@@ -164,7 +165,7 @@ const DICTIONARY = {
             "Élégantes": ["Ermite mondain", "Misanthrope"],
             "Inventions": ["Autopraxique (agit toujours seul, incapable de coopérer)"]
         }
-    }
+    },
 "autiste de merde": {
         "types": ["validiste"],
         "intention": "Variante aggravée et haineuse d'autiste, utilisée pour insulter violemment",
@@ -376,7 +377,7 @@ const DICTIONARY = {
         "alternatives": {
             "Descriptions": ["Confus", "Perdu", "Désorienté momentanément", "A un trou", "Un blanc", "Ne suit plus", "A décroché", "Fatigué", "Saturé"]
         }
-    }
+    },
 // ========== C ==========
     "cacochyme": {
         "types": ["validiste", "agiste"],
@@ -584,7 +585,7 @@ const DICTIONARY = {
             "Inventions": ["Nodocéphale", "Crétinocéphale", "Verboplecte"],
             "IMPORTANT": ["Ne JAMAIS utiliser de terminologie médicale comme insulte"]
         }
-    }
+    },
 "déficient": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un d'incompétent",
@@ -831,7 +832,7 @@ const DICTIONARY = {
             "Descriptions": ["Calme", "Posé", "Tranquille", "Amorphe", "Léthargique (si vraiment approprié)"],
             "IMPORTANT": ["Ne JAMAIS moquer la médication"]
         }
-    }
+    },
 // ========== F ==========
     "fada": {
         "types": ["saniste"],
@@ -1053,7 +1054,7 @@ const DICTIONARY = {
             "Élégantes": ["Exalté", "Ardent", "Impétueux", "Fougueux"],
             "Inventions": ["Vexibond (qui s'indigne pour un rien, excessif)"]
         }
-    }
+    },
 // ========== I ==========
     "idiot": {
         "types": ["validiste"],
@@ -1330,7 +1331,7 @@ const DICTIONARY = {
         "alternatives": {
             "Descriptions": ["Ne voit pas les conséquences", "Manque de vision", "Ne perçoit pas les détails", "Les nuances", "Peu clairvoyant", "Peu perspicace"]
         }
-    }
+    },
 // ========== N ==========
     "nain": {
         "types": ["validiste"],
@@ -1567,7 +1568,7 @@ const DICTIONARY = {
             "Inventions": ["Fumigophore (qui brouille les esprits)", "Somnambulogue"],
             "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
         }
-    }
+    },
 // ========== R ==========
     "ramolli": {
         "types": ["validiste", "saniste", "agiste"],
@@ -1887,7 +1888,7 @@ const DICTIONARY = {
             "Si sous traitement": ["Somnolent", "Ralenti", "Au ralenti"],
             "Si apathie": ["Apathique", "Léthargique", "Inactif", "Avachi", "Amorphe", "Sans énergie"]
         }
-    }
+    },
 // ========================================
     // EXPRESSIONS ET LOCUTIONS
     // ========================================
@@ -2548,7 +2549,7 @@ ALTERNATIVES.regionaux = {
             `
         }
     }
-};
+},
 descriptions: {
         titre: "Descriptions factuelles de comportements problématiques",
         contenu: `
