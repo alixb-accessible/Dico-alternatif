@@ -2055,7 +2055,7 @@ const DICTIONARY = {
 // ========================================
 
 const TEXTES = {
-    aPropos: `
+   aPropos: `
         <h2>Pourquoi ce dictionnaire ?</h2>
         <p>Le validisme, le capacitisme, le sanisme (ou psychophobie) et l'handiphobie désignent les discriminations envers les personnes en situation de handicap ou atteintes de troubles de santé mentale. Ces discriminations se manifestent notamment dans notre langage quotidien, où des termes médicaux désignant des handicaps ou des pathologies sont détournés en insultes. Cette banalisation renforce la stigmatisation et l'exclusion des personnes concernées.</p>
         
@@ -2082,135 +2082,50 @@ const TEXTES = {
         </ul>
         <p><em>ET 1 mois d'obligation d'écoute en boucle de "C'est pas faux" de Perceval en répétant après chaque réplique "Jarnidieu, quel faquin suis-je !" (bon d'accord, celle-là on l'a inventée, mais avouez que ça fait réfléchir)</em></p>
 
+        <h3>Réappropriation, retournement du stigmate et autodétermination</h3>
+        <p>Les personnes concernées par le handicap ou les troubles de santé mentale ont le droit absolu de se définir comme elles l'entendent et de réutiliser pour elles-mêmes des termes stigmatisants si elles le souhaitent.</p>
+        
+        <p>Cette pratique, théorisée notamment par le sociologue Erving Goffman dans <a href="https://fr.wikipedia.org/wiki/Stigmate_(Erving_Goffman)" target="_blank" rel="noopener noreferrer"><em>Stigmate</em> (1963)</a>, s'appelle la réappropriation ou le retournement du stigmate : elle consiste à reprendre possession d'une insulte ou d'un terme médical pour lui enlever son pouvoir oppressif et en faire un outil d'affirmation politique et identitaire.</p>
+        
+        <h4>Une stratégie de lutte transversale</h4>
+        <p>Cette stratégie de réappropriation traverse toutes les luttes contre les discriminations. <a href="https://fr.wikipedia.org/wiki/Jos%C3%A9phine_Baker" target="_blank" rel="noopener noreferrer"><strong>Joséphine Baker</strong></a>, par exemple, a détourné et réapproprié les stéréotypes racistes et coloniaux de la "sauvagerie" dans ses performances pour mieux les subvertir et affirmer sa puissance artistique et politique.</p>
+        
+        <p>De la même manière, les mouvements LGBTQI+ ont réapproprié "queer", "gouine" ou "pédé", les féministes ont retourné "sorcière", et les personnes racisées ont repris le contrôle de termes qui les désignaient.</p>
+        
+        <h4>Les cultures crip et mad</h4>
+        <p>Dans les pays anglophones, les mouvements <a href="https://en.wikipedia.org/wiki/Crip_theory" target="_blank" rel="noopener noreferrer"><strong>crip</strong></a> (de cripple, "estropié") et <a href="https://www.madinamerica.com/mad-in-america/" target="_blank" rel="noopener noreferrer"><strong>mad</strong></a> ("fou") incarnent cette réappropriation radicale.</p>
+        
+        <p>Inspirés des travaux fondateurs des <a href="https://dsq-sds.org/" target="_blank" rel="noopener noreferrer"><strong>Disability Studies</strong></a> (notamment ceux de <a href="https://disabilities-studies.leeds.ac.uk/about/staff/rosemarie-garland-thomson/" target="_blank" rel="noopener noreferrer"><strong>Rosemarie Garland-Thomson</strong></a>, <a href="https://en.wikipedia.org/wiki/Lennard_J._Davis" target="_blank" rel="noopener noreferrer"><strong>Lennard Davis</strong></a>, ou <a href="https://en.wikipedia.org/wiki/Robert_McRuer" target="_blank" rel="noopener noreferrer"><strong>Robert McRuer</strong></a>), ces mouvements affirment fièrement des identités longtemps niées ou pathologisées. En France, des collectifs comme le <strong>CLE Autistes</strong>, des militant·es handis ou psys reprennent aussi ces termes ("nous les fous", "nous les handicapés") dans une démarche de fierté et de lutte politique.</p>
+        
+        <h4>Une démarche politique collective</h4>
+        <p>La réappropriation n'est pas qu'individuelle : c'est un acte politique collectif qui vise à :</p>
+        <ul>
+            <li>Déstabiliser les normes oppressives (validistes, sanistes, racistes, sexistes...)</li>
+            <li>Affirmer une identité positive face à la stigmatisation</li>
+            <li>Créer de la solidarité et du pouvoir d'agir entre personnes concernées</li>
+            <li>Contester le monopole des institutions (médicales, coloniales, patriarcales...) sur la définition des identités minorisées.</li>
+        </ul>
+        
+        <p>Comme l'analysent les chercheuses féministes et disability studies (<a href="https://en.wikipedia.org/wiki/Marta_Russell" target="_blank" rel="noopener noreferrer"><strong>Marta Russell</strong></a>, <a href="https://en.wikipedia.org/wiki/Sunaura_Taylor" target="_blank" rel="noopener noreferrer"><strong>Sunaura Taylor</strong></a>, ou en France <a href="https://cermes3.cnrs.fr/fr/membres/myriam-winance" target="_blank" rel="noopener noreferrer"><strong>Myriam Winance</strong></a>, <a href="https://cermes3.cnrs.fr/fr/membres/isabelle-ville" target="_blank" rel="noopener noreferrer"><strong>Isabelle Ville</strong></a>), cette réappropriation s'inscrit dans une longue tradition de luttes émancipatrices où les groupes opprimés reprennent le contrôle du langage qui les désigne.</p>
+        
+        <h4>Attention</h4>
+        <p><strong>Ce n'est pas parce qu'une personne concernée utilise un terme pour elle-même que les personnes non-concernées peuvent l'utiliser librement.</strong></p>
+        
+        <p>La réappropriation est un droit qui appartient aux personnes discriminées.</p>
+        
+        <p>Les personnes valides ou sans trouble psy ne peuvent pas se servir de cette réappropriation pour justifier leur usage de termes validistes ou sanistes.</p>
+        
+        <p>C'est la même logique que dans les luttes antiracistes, LGBTQI+ ou féministes.</p>
+        
+        <p><a href="https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us" target="_blank" rel="noopener noreferrer"><strong>"Rien sur nous sans nous"</strong></a> (Nothing about us without us), slogan historique du mouvement handicap depuis les années 1990.</p>
+
         <h3>Remerciements</h3>
-        <p>Ce dictionnaire a été créé pour sensibiliser au validisme et au sanisme dans le langage quotidien. Il n'est pas exhaustif et peut être enrichi.</p>
-        <p>Un grand merci aux associations de personnes concernées qui luttent au quotidien contre ces discriminations, et qui nous éduquent sur ces sujets.</p>
-        <p><strong>Ensemble, faisons du français une langue plus riche, plus créative, et plus respectueuse de tou·tes.</strong></p>
+        <p>Ce dictionnaire a été créé par des personnes concernées pour sensibiliser au validisme, au capacitisme, au sanisme et à l'handiphobie dans le langage quotidien.</p>
+        <p>Selon le principe "Rien sur nous sans nous", des dizaines de personnes en situation de handicap, atteintes de troubles psychiques, neuroatypiques, malades chroniques ou concernées à divers titres ont été interrogées. Elles ont partagé leur vécu, leur colère, leur expertise et leurs alternatives. Merci à elles.</p>
+        <p>Merci aux associations et collectifs militants qui luttent au quotidien contre le validisme, le capacitisme, le sanisme et l'handiphobie, et qui éduquent inlassablement sur ces sujets.</p>
+        <p>Ce dictionnaire est une première version, vivante et perfectible. Il y aura toujours plus de mots à déconstruire, plus d'alternatives à inventer, plus de nuances à affiner. Vos retours, critiques et propositions sont les bienvenus.</p>
+        <p><strong>Ensemble, faisons du français une langue plus riche, plus créative, et plus juste pour tou·tes.</strong></p>
     `,
-
-    definitions: {
-        intro: `<h2>Petit lexique des discriminations</h2>
-        <p>Parce qu'il est important de nommer précisément les oppressions, voici les définitions des termes utilisés dans ce dictionnaire.</p>`,
-
-        validisme: `
-            <h2>Validisme</h2>
-            <p><strong>Définition :</strong> Discrimination, préjugés et exclusion envers les personnes en situation de handicap (physique, sensoriel, intellectuel, psychique, etc.). Le validisme repose sur l'idée que les personnes valides sont la norme et que tout écart à cette norme est un défaut, une anomalie à corriger ou à cacher. Ce terme met l'accent sur la norme validiste qui exclut et marginalise.</p>
-            
-            <h3>Exemples :</h3>
-            <ul>
-                <li>Utiliser "débile", "handicapé", "boiteux" comme insultes</li>
-                <li>Des bâtiments inaccessibles aux fauteuils roulants</li>
-                <li>Infantiliser les personnes handicapées</li>
-                <li>Parler à la place des personnes concernées</li>
-                <li>Considérer le handicap comme une tragédie personnelle plutôt qu'un fait de société.</li>
-            </ul>
-            
-            <p><strong>Origine du terme :</strong> "Valide" (qui n'a pas de handicap) + suffixe "-isme" (discrimination). Terme principalement utilisé dans l'espace francophone.</p>
-        `,
-
-        capacitisme: `
-            <h2>Capacitisme</h2>
-            <p><strong>Définition :</strong> Système d'oppression qui valorise certaines capacités corporelles et cognitives comme supérieures ou plus désirables, et qui structure la société autour de ces capacités considérées comme "normales". Le capacitisme ne se limite pas à discriminer les personnes handicapées, mais évalue et hiérarchise toutes les personnes selon leurs capacités (productivité, autonomie, performance). Il s'agit d'une logique plus large qui affecte aussi les personnes âgées, malades chroniques, ou temporairement diminuées.</p>
-            
-            <h3>Exemples :</h3>
-            <ul>
-                <li>Valoriser uniquement les corps "productifs" et "autonomes"</li>
-                <li>L'injonction à la performance et à l'optimisation constante</li>
-                <li>Considérer qu'une vie avec des limitations n'a pas de valeur</li>
-                <li>Le mythe du "super-handicapé" qui doit "surmonter" son handicap pour être accepté</li>
-                <li>L'eugénisme et le tri prénatal basé sur les capacités futures.</li>
-            </ul>
-            
-            <p><strong>Origine du terme :</strong> De l'anglais <em>ableism</em> (de <em>able</em> = capable), traduction qui insiste sur la capacité comme critère de valeur. Terme issu des <em>disability studies</em> anglo-saxonnes.</p>
-            
-            <h4>La différence clé :</h4>
-            <p><strong>Validisme</strong> = discrimination envers les personnes handicapées (opposition valide/invalide)</p>
-            <p><strong>Capacitisme</strong> = système qui hiérarchise les individus selon leurs capacités, affectant un spectre plus large de personnes.</p>
-            <p>Les deux termes se recoupent largement dans leurs effets sur les personnes handicapées, mais le capacitisme permet de penser une oppression plus systémique et extensive.</p>
-        `,
-
-        sanisme: `
-            <h2>Sanisme (ou Psychophobie)</h2>
-            <p><strong>Définition :</strong> Discrimination, préjugés et exclusion envers les personnes ayant ou ayant eu des troubles de santé mentale (dépression, troubles anxieux, troubles bipolaires, schizophrénie, etc.). Le sanisme repose sur l'idée que la santé mentale "normale" est la norme et que tout trouble mental est un défaut, une faiblesse morale ou une dangerosité.</p>
-            
-            <h3>Exemples :</h3>
-            <ul>
-                <li>Utiliser "fou", "schizo", "psychopathe", "dépressif" comme insultes</li>
-                <li>Associer systématiquement maladie mentale et danger/violence</li>
-                <li>Minimiser la souffrance ("c'est dans ta tête", "secoue-toi")</li>
-                <li>Stigmatiser les personnes qui prennent des médicaments psychiatriques</li>
-                <li>Infantiliser ou sur-médicaliser les personnes concernées</li>
-            </ul>
-            
-            <p><strong>Origine du terme :</strong> Du latin "sanus" (sain d'esprit) + suffixe "-isme". Le terme a été popularisé dans les années 1990 par les mouvements de personnes concernées.</p>
-        `,
-
-        handiphobie: `
-            <h2>Handiphobie</h2>
-            <p><strong>Définition :</strong> Peur, rejet et hostilité envers les personnes en situation de handicap. C'est un terme plus général qui englobe à la fois le validisme (discrimination systémique) et les réactions individuelles de peur ou de dégoût face au handicap.</p>
-            
-            <h3>Exemples :</h3>
-            <ul>
-                <li>Éviter de regarder ou parler à une personne handicapée</li>
-                <li>Avoir des réactions de dégoût face à certains handicaps visibles</li>
-                <li>Refuser d'embaucher une personne handicapée par "peur"</li>
-                <li>Utiliser le handicap comme insulte ou épouvantail</li>
-            </ul>
-        `,
-
-        recoupements: `
-            <h2>Différences et recoupements</h2>
-            <ul>
-                <li><strong>Validisme</strong> = discrimination envers les personnes handicapées, fondée sur l'opposition valide/invalide et l'idée que le handicap est une anomalie</li>
-                <li><strong>Capacitisme</strong> = système d'oppression qui hiérarchise les individus selon leurs capacités corporelles et cognitives, valorisant la productivité, l'autonomie et la performance comme normes sociales</li>
-                <li><strong>Sanisme</strong> = discrimination systémique envers les troubles de santé mentale et les personnes psychiatrisées</li>
-                <li><strong>Handiphobie</strong> = terme parapluie incluant peur, rejet et hostilité envers le handicap en général (dimension plus affective et individuelle)</li>
-            </ul>
-            
-            <p><strong>À noter :</strong> Le validisme et le capacitisme se recoupent largement dans leurs effets sur les personnes handicapées, mais le capacitisme permet d'analyser une logique plus large qui touche aussi les personnes âgées, malades chroniques, ou en situation de vulnérabilité temporaire. Le sanisme, bien que ciblant spécifiquement la santé mentale, partage avec le validisme et le capacitisme cette même logique de normalisation et d'exclusion.</p>
-            
-            <p>Ces discriminations s'entrecroisent souvent (une personne peut subir simultanément validisme, capacitisme et sanisme) et s'articulent avec d'autres oppressions (sexisme, racisme, âgisme, classisme, LGBTIphobie, etc.), créant des situations de discriminations multiples et imbriquées.</p>
-        `,
-
-        reappropriation: `
-            <h2>Réappropriation, retournement du stigmate et autodétermination</h2>
-            <p>Les personnes concernées par le handicap ou les troubles de santé mentale ont le droit absolu de se définir comme elles l'entendent et de réutiliser pour elles-mêmes des termes stigmatisants si elles le souhaitent.</p>
-            
-            <p>Cette pratique, théorisée notamment par le sociologue Erving Goffman dans <em>Stigmate</em> (1963), s'appelle la réappropriation ou le retournement du stigmate : elle consiste à reprendre possession d'une insulte ou d'un terme médical pour lui enlever son pouvoir oppressif et en faire un outil d'affirmation politique et identitaire.</p>
-            
-            <h3>Une stratégie de lutte transversale</h3>
-            <p>Cette stratégie de réappropriation traverse toutes les luttes contre les discriminations. <strong>Joséphine Baker</strong>, par exemple, a détourné et réapproprié les stéréotypes racistes et coloniaux de la "sauvagerie" dans ses performances pour mieux les subvertir et affirmer sa puissance artistique et politique.</p>
-            
-            <p>De la même manière, les mouvements LGBTQI+ ont réapproprié "queer", "gouine" ou "pédé", les féministes ont retourné "sorcière", et les personnes racisées ont repris le contrôle de termes qui les désignaient.</p>
-            
-            <h3>Les cultures crip et mad</h3>
-            <p>Dans les pays anglophones, les mouvements <strong>crip</strong> (de cripple, "estropié") et <strong>mad</strong> ("fou") incarnent cette réappropriation radicale.</p>
-            
-            <p>Inspirés des travaux fondateurs des <strong>Disability Studies</strong> (notamment ceux de <strong>Rosemarie Garland-Thomson</strong>, <strong>Lennard Davis</strong>, ou <strong>Robert McRuer</strong>), ces mouvements affirment fièrement des identités longtemps niées ou pathologisées. En France, des collectifs comme le <strong>CLE Autistes</strong>, des militant·es handis ou psys reprennent aussi ces termes ("nous les fous", "nous les handicapés") dans une démarche de fierté et de lutte politique.</p>
-            
-            <h3>Une démarche politique collective</h3>
-            <p>La réappropriation n'est pas qu'individuelle : c'est un acte politique collectif qui vise à :</p>
-            <ul>
-                <li>Déstabiliser les normes oppressives (validistes, sanistes, racistes, sexistes...)</li>
-                <li>Affirmer une identité positive face à la stigmatisation</li>
-                <li>Créer de la solidarité et du pouvoir d'agir entre personnes concernées</li>
-                <li>Contester le monopole des institutions (médicales, coloniales, patriarcales...) sur la définition des identités minorisées.</li>
-            </ul>
-            
-            <p>Comme l'analysent les chercheuses féministes et disability studies (<strong>Marta Russell</strong>, <strong>Sunaura Taylor</strong>, ou en France <strong>Myriam Winance</strong>, <strong>Isabelle Ville</strong>), cette réappropriation s'inscrit dans une longue tradition de luttes émancipatrices où les groupes opprimés reprennent le contrôle du langage qui les désigne.</p>
-            
-            <h3>Attention</h3>
-            <p><strong>Ce n'est pas parce qu'une personne concernée utilise un terme pour elle-même que les personnes non-concernées peuvent l'utiliser librement.</strong></p>
-            
-            <p>La réappropriation est un droit qui appartient aux personnes discriminées.</p>
-            
-            <p>Les personnes valides ou sans trouble psy ne peuvent pas se servir de cette réappropriation pour justifier leur usage de termes validistes ou sanistes.</p>
-            
-            <p>C'est la même logique que dans les luttes antiracistes, LGBTQI+ ou féministes.</p>
-            
-            <p><strong>"Rien sur nous sans nous"</strong> (Nothing about us without us), slogan historique du mouvement handicap depuis les années 1990.</p>
-        `
-    },
 
     hallOfShame: `
         <h2>Hall of Shame : Quand les politiques montrent l'exemple... du validisme</h2>
