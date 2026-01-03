@@ -2602,7 +2602,6 @@ ALTERNATIVES.conclusion = {
             <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
             <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
         `
-}
 };
 
 // ========================================
