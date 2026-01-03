@@ -2549,7 +2549,7 @@ ALTERNATIVES.regionaux = {
             `
         }
     }
-},
+};
 ALTERNATIVES.descriptions = {
         titre: "Descriptions factuelles de comportements problématiques",
         contenu: `
@@ -2563,7 +2563,7 @@ ALTERNATIVES.descriptions = {
                 <li>Tu es cruel / impitoyable / insensible</li>
             </ul>
         `
-    },
+    };
 
    ALTERNATIVES.jurons = {
         titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
@@ -2584,7 +2584,7 @@ ALTERNATIVES.descriptions = {
             <p>Tonnerre ! Tudieu !</p>
             <p>Ventrebleu ! Vertubleu !</p>
         `
-    },
+    };
 
     ALTERNATIVES.conclusion = {
         titre: "Conclusion",
