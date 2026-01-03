@@ -2357,8 +2357,8 @@ const ALTERNATIVES = {
             </ul>
         `
     }
-};
-ALTERNATIVES.regionaux = {
+},
+regionaux: {
     titre: "Tour de France des insultes régionales non oppressives",
     sections: {
         alsacien: {
