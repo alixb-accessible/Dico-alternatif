@@ -166,7 +166,7 @@ const DICTIONARY = {
             "Inventions": ["Autopraxique (agit toujours seul, incapable de coopérer)"]
         }
     },
-"autiste de merde": {
+    "autiste de merde": {
         "types": ["validiste"],
         "intention": "Variante aggravée et haineuse d'autiste, utilisée pour insulter violemment",
         "problematique": "Combine validisme et violence verbale extrême. Déshumanise totalement les personnes autistes et véhicule une haine pure envers le handicap. Absolument inacceptable.",
@@ -378,7 +378,7 @@ const DICTIONARY = {
             "Descriptions": ["Confus", "Perdu", "Désorienté momentanément", "A un trou", "Un blanc", "Ne suit plus", "A décroché", "Fatigué", "Saturé"]
         }
     },
-// ========== C ==========
+    // ========== C ==========
     "cacochyme": {
         "types": ["validiste", "agiste"],
         "intention": "Qualifier quelqu'un de faible, maladif (terme vieilli)",
@@ -586,7 +586,7 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS utiliser de terminologie médicale comme insulte"]
         }
     },
-"déficient": {
+    "déficient": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un d'incompétent",
         "problematique": "Terme médical ('déficience intellectuelle', 'déficience motrice') détourné.",
@@ -833,7 +833,7 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS moquer la médication"]
         }
     },
-// ========== F ==========
+    // ========== F ==========
     "fada": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de fou, bizarre (provençal)",
@@ -1055,7 +1055,7 @@ const DICTIONARY = {
             "Inventions": ["Vexibond (qui s'indigne pour un rien, excessif)"]
         }
     },
-// ========== I ==========
+    // ========== I ==========
     "idiot": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un de peu réfléchi",
@@ -1332,7 +1332,7 @@ const DICTIONARY = {
             "Descriptions": ["Ne voit pas les conséquences", "Manque de vision", "Ne perçoit pas les détails", "Les nuances", "Peu clairvoyant", "Peu perspicace"]
         }
     },
-// ========== N ==========
+    // ========== N ==========
     "nain": {
         "types": ["validiste"],
         "intention": "Se moquer de la petite taille de quelqu'un, ou utiliser comme insulte générale",
@@ -1569,7 +1569,7 @@ const DICTIONARY = {
             "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
         }
     },
-// ========== R ==========
+    // ========== R ==========
     "ramolli": {
         "types": ["validiste", "saniste", "agiste"],
         "intention": "Qualifier quelqu'un de sénile, dont le cerveau se détériore",
@@ -1889,7 +1889,7 @@ const DICTIONARY = {
             "Si apathie": ["Apathique", "Léthargique", "Inactif", "Avachi", "Amorphe", "Sans énergie"]
         }
     },
-// ========================================
+    // ========================================
     // EXPRESSIONS ET LOCUTIONS
     // ========================================
 
@@ -2091,7 +2091,7 @@ const TEXTES = {
     definitions: {
         intro: `<h2>Petit lexique des discriminations</h2>
         <p>Parce qu'il est important de nommer précisément les oppressions, voici les définitions des termes utilisés dans ce dictionnaire.</p>`,
-        
+
         validisme: `
             <h2>Validisme</h2>
             <p><strong>Définition :</strong> Discrimination, préjugés et exclusion envers les personnes en situation de handicap (physique, sensoriel, intellectuel, psychique, etc.). Le validisme repose sur l'idée que les personnes valides sont la norme et que tout écart à cette norme est un défaut, une anomalie à corriger ou à cacher. Ce terme met l'accent sur la norme validiste qui exclut et marginalise.</p>
@@ -2107,7 +2107,7 @@ const TEXTES = {
             
             <p><strong>Origine du terme :</strong> "Valide" (qui n'a pas de handicap) + suffixe "-isme" (discrimination). Terme principalement utilisé dans l'espace francophone.</p>
         `,
-        
+
         capacitisme: `
             <h2>Capacitisme</h2>
             <p><strong>Définition :</strong> Système d'oppression qui valorise certaines capacités corporelles et cognitives comme supérieures ou plus désirables, et qui structure la société autour de ces capacités considérées comme "normales". Le capacitisme ne se limite pas à discriminer les personnes handicapées, mais évalue et hiérarchise toutes les personnes selon leurs capacités (productivité, autonomie, performance). Il s'agit d'une logique plus large qui affecte aussi les personnes âgées, malades chroniques, ou temporairement diminuées.</p>
@@ -2128,7 +2128,7 @@ const TEXTES = {
             <p><strong>Capacitisme</strong> = système qui hiérarchise les individus selon leurs capacités, affectant un spectre plus large de personnes.</p>
             <p>Les deux termes se recoupent largement dans leurs effets sur les personnes handicapées, mais le capacitisme permet de penser une oppression plus systémique et extensive.</p>
         `,
-        
+
         sanisme: `
             <h2>Sanisme (ou Psychophobie)</h2>
             <p><strong>Définition :</strong> Discrimination, préjugés et exclusion envers les personnes ayant ou ayant eu des troubles de santé mentale (dépression, troubles anxieux, troubles bipolaires, schizophrénie, etc.). Le sanisme repose sur l'idée que la santé mentale "normale" est la norme et que tout trouble mental est un défaut, une faiblesse morale ou une dangerosité.</p>
@@ -2144,7 +2144,7 @@ const TEXTES = {
             
             <p><strong>Origine du terme :</strong> Du latin "sanus" (sain d'esprit) + suffixe "-isme". Le terme a été popularisé dans les années 1990 par les mouvements de personnes concernées.</p>
         `,
-        
+
         handiphobie: `
             <h2>Handiphobie</h2>
             <p><strong>Définition :</strong> Peur, rejet et hostilité envers les personnes en situation de handicap. C'est un terme plus général qui englobe à la fois le validisme (discrimination systémique) et les réactions individuelles de peur ou de dégoût face au handicap.</p>
@@ -2157,7 +2157,7 @@ const TEXTES = {
                 <li>Utiliser le handicap comme insulte ou épouvantail</li>
             </ul>
         `,
-        
+
         recoupements: `
             <h2>Différences et recoupements</h2>
             <ul>
@@ -2256,7 +2256,7 @@ const ALTERNATIVES = {
         <h2>Les alternatives</h2>
         <p>Voici un récapitulatif des insultes que vous pouvez utiliser sans discrimination :</p>
     `,
-    
+
     vieuxFrancais: {
         titre: "Insultes élégantes du vieux français",
         contenu: `
@@ -2285,12 +2285,12 @@ const ALTERNATIVES = {
             </ul>
         `
     },
-    
+
     alimentaires: {
         titre: "Insultes alimentaires",
         contenu: `<p>Andouille, cornichon, courge, patate, nouille, navet, gland, courgette…</p>`
     },
-    
+
     inventions: {
         titre: "Inventions lexicales satiriques et érudites - Épithètes inventées à base de racines grecques/latines",
         contenu: `
@@ -2356,7 +2356,7 @@ const ALTERNATIVES = {
                 <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li>
             </ul>
         `
-  }
+    }
 };
 ALTERNATIVES.regionaux = {
     titre: "Tour de France des insultes régionales non oppressives",
@@ -2551,8 +2551,8 @@ ALTERNATIVES.regionaux = {
     }
 };
 ALTERNATIVES.descriptions = {
-        titre: "Descriptions factuelles de comportements problématiques",
-        contenu: `
+    titre: "Descriptions factuelles de comportements problématiques",
+    contenu: `
             <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
             <ul class="alternatives-list">
                 <li>Tu mens / Tu es malhonnête</li>
@@ -2563,11 +2563,11 @@ ALTERNATIVES.descriptions = {
                 <li>Tu es cruel / impitoyable / insensible</li>
             </ul>
         `
-    };
+};
 
-   ALTERNATIVES.jurons = {
-        titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
-        contenu: `
+ALTERNATIVES.jurons = {
+    titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
+    contenu: `
             <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
             <p>Bougre !</p>
             <p>Ça alors ! Ciel ! Corbleu ! Crénom ! Crédié !</p>
@@ -2584,11 +2584,11 @@ ALTERNATIVES.descriptions = {
             <p>Tonnerre ! Tudieu !</p>
             <p>Ventrebleu ! Vertubleu !</p>
         `
-    };
+};
 
-    ALTERNATIVES.conclusion = {
-        titre: "Conclusion",
-        contenu: `
+ALTERNATIVES.conclusion = {
+    titre: "Conclusion",
+    contenu: `
             <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
             
             <p>Changer son vocabulaire n'est pas de la censure : c'est :</p>
@@ -2602,7 +2602,7 @@ ALTERNATIVES.descriptions = {
             <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
             <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
         `
-    }
+}
 };
 
 // ========================================
@@ -2610,6 +2610,9 @@ ALTERNATIVES.descriptions = {
 // ========================================
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { DICTIONARY, TEXTES, ALTERNATIVES };
+    module.exports = {
+        DICTIONARY,
+        TEXTES,
+        ALTERNATIVES
+    };
 }
-
