@@ -2356,9 +2356,9 @@ const ALTERNATIVES = {
                 <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li>
             </ul>
         `
-    }
-},
-regionaux: {
+  }
+};
+ALTERNATIVES.regionaux = {
     titre: "Tour de France des insultes régionales non oppressives",
     sections: {
         alsacien: {
