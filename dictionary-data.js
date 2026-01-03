@@ -2550,7 +2550,7 @@ ALTERNATIVES.regionaux = {
         }
     }
 },
-descriptions: {
+ALTERNATIVES.descriptions: {
         titre: "Descriptions factuelles de comportements problématiques",
         contenu: `
             <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
@@ -2565,7 +2565,7 @@ descriptions: {
         `
     },
 
-    jurons: {
+   ALTERNATIVES.jurons: {
         titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
         contenu: `
             <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
@@ -2586,7 +2586,7 @@ descriptions: {
         `
     },
 
-    conclusion: {
+    ALTERNATIVES.conclusion: {
         titre: "Conclusion",
         contenu: `
             <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
