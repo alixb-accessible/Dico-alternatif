@@ -164,9 +164,8 @@ const DICTIONARY = {
             "Élégantes": ["Ermite mondain", "Misanthrope"],
             "Inventions": ["Autopraxique (agit toujours seul, incapable de coopérer)"]
         }
-    },
-
-    "autiste de merde": {
+    }
+"autiste de merde": {
         "types": ["validiste"],
         "intention": "Variante aggravée et haineuse d'autiste, utilisée pour insulter violemment",
         "problematique": "Combine validisme et violence verbale extrême. Déshumanise totalement les personnes autistes et véhicule une haine pure envers le handicap. Absolument inacceptable.",
@@ -286,9 +285,9 @@ const DICTIONARY = {
             "Vieux français": ["Bélître", "Butor", "Jobastre (occitan)"],
             "Si maladroit socialement": ["Maladroit", "Gauche"]
         }
-    }
-},
-"bigleux": {
+    },
+
+    "bigleux": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un qui ne voit pas bien ou qui manque d'observation",
         "problematique": "Se moque des personnes malvoyantes ou ayant des troubles de la vision.",
@@ -377,9 +376,8 @@ const DICTIONARY = {
         "alternatives": {
             "Descriptions": ["Confus", "Perdu", "Désorienté momentanément", "A un trou", "Un blanc", "Ne suit plus", "A décroché", "Fatigué", "Saturé"]
         }
-    },
-
-    // ========== C ==========
+    }
+// ========== C ==========
     "cacochyme": {
         "types": ["validiste", "agiste"],
         "intention": "Qualifier quelqu'un de faible, maladif (terme vieilli)",
@@ -550,9 +548,9 @@ const DICTIONARY = {
             "Si nécessaire factuellement": ["Personne amputée des membres inférieurs"],
             "IMPORTANT": ["Ne JAMAIS utiliser comme métaphore"]
         }
-    }
-},
-// ========== D ==========
+    },
+
+    // ========== D ==========
     "daltonien": {
         "types": ["validiste"],
         "intention": "Dire que quelqu'un ne voit pas les différences, les nuances (métaphore)",
@@ -586,9 +584,8 @@ const DICTIONARY = {
             "Inventions": ["Nodocéphale", "Crétinocéphale", "Verboplecte"],
             "IMPORTANT": ["Ne JAMAIS utiliser de terminologie médicale comme insulte"]
         }
-    },
-
-    "déficient": {
+    }
+"déficient": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un d'incompétent",
         "problematique": "Terme médical ('déficience intellectuelle', 'déficience motrice') détourné.",
@@ -834,9 +831,8 @@ const DICTIONARY = {
             "Descriptions": ["Calme", "Posé", "Tranquille", "Amorphe", "Léthargique (si vraiment approprié)"],
             "IMPORTANT": ["Ne JAMAIS moquer la médication"]
         }
-    },
-
-    // ========== F ==========
+    }
+// ========== F ==========
     "fada": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de fou, bizarre (provençal)",
@@ -920,9 +916,9 @@ const DICTIONARY = {
             "Inventions": ["Farfadocieux"],
             "Vieux français/littéraire": ["Rocambolesque (extravagant)", "Histrioncule"]
         }
-    }
-},
-// ========== G ==========
+    },
+
+    // ========== G ==========
     "gaga": {
         "types": ["validiste", "saniste", "agiste"],
         "intention": "Qualifier une personne âgée de sénile, qui 'radote'",
@@ -1057,9 +1053,8 @@ const DICTIONARY = {
             "Élégantes": ["Exalté", "Ardent", "Impétueux", "Fougueux"],
             "Inventions": ["Vexibond (qui s'indigne pour un rien, excessif)"]
         }
-    },
-
-    // ========== I ==========
+    }
+// ========== I ==========
     "idiot": {
         "types": ["validiste"],
         "intention": "Qualifier quelqu'un de peu réfléchi",
@@ -1173,9 +1168,9 @@ const DICTIONARY = {
             "Pour annuler quelque chose": ["Annuler", "Invalider (OK dans ce contexte technique)"],
             "Pour une personne": ["Personne handicapée", "Personne en situation de handicap"]
         }
-    }
-},
-// ========== L ==========
+    },
+
+    // ========== L ==========
     "largué": {
         "types": ["validiste"],
         "intention": "Dire que quelqu'un ne suit pas, a du mal à comprendre",
@@ -1335,9 +1330,8 @@ const DICTIONARY = {
         "alternatives": {
             "Descriptions": ["Ne voit pas les conséquences", "Manque de vision", "Ne perçoit pas les détails", "Les nuances", "Peu clairvoyant", "Peu perspicace"]
         }
-    },
-
-    // ========== N ==========
+    }
+// ========== N ==========
     "nain": {
         "types": ["validiste"],
         "intention": "Se moquer de la petite taille de quelqu'un, ou utiliser comme insulte générale",
@@ -1392,9 +1386,9 @@ const DICTIONARY = {
             "Élégantes": ["D'un tempérament inquiet", "Esprit tortueux"],
             "Inventions": ["Filigranophile (amoureux des détails inutiles)", "Tic-taculeux"]
         }
-    }
-},
-// ========== O ==========
+    },
+
+    // ========== O ==========
     "obsessionnel": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de trop focalisé, rigide dans ses habitudes",
@@ -1573,9 +1567,8 @@ const DICTIONARY = {
             "Inventions": ["Fumigophore (qui brouille les esprits)", "Somnambulogue"],
             "IMPORTANT": ["Ne JAMAIS utiliser de diagnostic psychiatrique comme insulte"]
         }
-    },
-
-    // ========== R ==========
+    }
+// ========== R ==========
     "ramolli": {
         "types": ["validiste", "saniste", "agiste"],
         "intention": "Qualifier quelqu'un de sénile, dont le cerveau se détériore",
@@ -1753,9 +1746,9 @@ const DICTIONARY = {
             "Descriptions": ["Sensible", "À fleur de peau", "D'humeur changeante", "Imprévisible"],
             "NOTE": ["Ces termes peuvent être acceptables s'ils décrivent factuellement, mais pas comme insultes pathologisantes"]
         }
-    }
-},
-// ========== T ==========
+    },
+
+    // ========== T ==========
     "tapé": {
         "types": ["saniste"],
         "intention": "Qualifier quelqu'un de fou, bizarre",
@@ -1894,9 +1887,8 @@ const DICTIONARY = {
             "Si sous traitement": ["Somnolent", "Ralenti", "Au ralenti"],
             "Si apathie": ["Apathique", "Léthargique", "Inactif", "Avachi", "Amorphe", "Sans énergie"]
         }
-    },
-
-    // ========================================
+    }
+// ========================================
     // EXPRESSIONS ET LOCUTIONS
     // ========================================
 
@@ -2056,7 +2048,7 @@ const DICTIONARY = {
             "NOTE": ["Variante de 'péter un câble/plomb', même problématique"]
         }
     }
-},
+};
 // ========================================
 // CONTENUS TEXTUELS COMPLETS (VERSION INTÉGRALE)
 // ========================================
@@ -2177,46 +2169,46 @@ const TEXTES = {
             <p><strong>À noter :</strong> Le validisme et le capacitisme se recoupent largement dans leurs effets sur les personnes handicapées, mais le capacitisme permet d'analyser une logique plus large qui touche aussi les personnes âgées, malades chroniques, ou en situation de vulnérabilité temporaire. Le sanisme, bien que ciblant spécifiquement la santé mentale, partage avec le validisme et le capacitisme cette même logique de normalisation et d'exclusion.</p>
             
             <p>Ces discriminations s'entrecroisent souvent (une personne peut subir simultanément validisme, capacitisme et sanisme) et s'articulent avec d'autres oppressions (sexisme, racisme, âgisme, classisme, LGBTIphobie, etc.), créant des situations de discriminations multiples et imbriquées.</p>
-        `
-reappropriation: `
-    <h2>Réappropriation, retournement du stigmate et autodétermination</h2>
-    <p>Les personnes concernées par le handicap ou les troubles de santé mentale ont le droit absolu de se définir comme elles l'entendent et de réutiliser pour elles-mêmes des termes stigmatisants si elles le souhaitent.</p>
-    
-    <p>Cette pratique, théorisée notamment par le sociologue Erving Goffman dans <em>Stigmate</em> (1963), s'appelle la réappropriation ou le retournement du stigmate : elle consiste à reprendre possession d'une insulte ou d'un terme médical pour lui enlever son pouvoir oppressif et en faire un outil d'affirmation politique et identitaire.</p>
-    
-    <h3>Une stratégie de lutte transversale</h3>
-    <p>Cette stratégie de réappropriation traverse toutes les luttes contre les discriminations. <strong>Joséphine Baker</strong>, par exemple, a détourné et réapproprié les stéréotypes racistes et coloniaux de la "sauvagerie" dans ses performances pour mieux les subvertir et affirmer sa puissance artistique et politique.</p>
-    
-    <p>De la même manière, les mouvements LGBTQI+ ont réapproprié "queer", "gouine" ou "pédé", les féministes ont retourné "sorcière", et les personnes racisées ont repris le contrôle de termes qui les désignaient.</p>
-    
-    <h3>Les cultures crip et mad</h3>
-    <p>Dans les pays anglophones, les mouvements <strong>crip</strong> (de cripple, "estropié") et <strong>mad</strong> ("fou") incarnent cette réappropriation radicale.</p>
-    
-    <p>Inspirés des travaux fondateurs des <strong>Disability Studies</strong> (notamment ceux de <strong>Rosemarie Garland-Thomson</strong>, <strong>Lennard Davis</strong>, ou <strong>Robert McRuer</strong>), ces mouvements affirment fièrement des identités longtemps niées ou pathologisées. En France, des collectifs comme le <strong>CLE Autistes</strong>, des militant·es handis ou psys reprennent aussi ces termes ("nous les fous", "nous les handicapés") dans une démarche de fierté et de lutte politique.</p>
-    
-    <h3>Une démarche politique collective</h3>
-    <p>La réappropriation n'est pas qu'individuelle : c'est un acte politique collectif qui vise à :</p>
-    <ul>
-        <li>Déstabiliser les normes oppressives (validistes, sanistes, racistes, sexistes...)</li>
-        <li>Affirmer une identité positive face à la stigmatisation</li>
-        <li>Créer de la solidarité et du pouvoir d'agir entre personnes concernées</li>
-        <li>Contester le monopole des institutions (médicales, coloniales, patriarcales...) sur la définition des identités minorisées.</li>
-    </ul>
-    
-    <p>Comme l'analysent les chercheuses féministes et disability studies (<strong>Marta Russell</strong>, <strong>Sunaura Taylor</strong>, ou en France <strong>Myriam Winance</strong>, <strong>Isabelle Ville</strong>), cette réappropriation s'inscrit dans une longue tradition de luttes émancipatrices où les groupes opprimés reprennent le contrôle du langage qui les désigne.</p>
-    
-    <h3>Attention</h3>
-    <p><strong>Ce n'est pas parce qu'une personne concernée utilise un terme pour elle-même que les personnes non-concernées peuvent l'utiliser librement.</strong></p>
-    
-    <p>La réappropriation est un droit qui appartient aux personnes discriminées.</p>
-    
-    <p>Les personnes valides ou sans trouble psy ne peuvent pas se servir de cette réappropriation pour justifier leur usage de termes validistes ou sanistes.</p>
-    
-    <p>C'est la même logique que dans les luttes antiracistes, LGBTQI+ ou féministes.</p>
-    
-    <p><strong>"Rien sur nous sans nous"</strong> (Nothing about us without us), slogan historique du mouvement handicap depuis les années 1990.</p>
-`
+        `,
 
+        reappropriation: `
+            <h2>Réappropriation, retournement du stigmate et autodétermination</h2>
+            <p>Les personnes concernées par le handicap ou les troubles de santé mentale ont le droit absolu de se définir comme elles l'entendent et de réutiliser pour elles-mêmes des termes stigmatisants si elles le souhaitent.</p>
+            
+            <p>Cette pratique, théorisée notamment par le sociologue Erving Goffman dans <em>Stigmate</em> (1963), s'appelle la réappropriation ou le retournement du stigmate : elle consiste à reprendre possession d'une insulte ou d'un terme médical pour lui enlever son pouvoir oppressif et en faire un outil d'affirmation politique et identitaire.</p>
+            
+            <h3>Une stratégie de lutte transversale</h3>
+            <p>Cette stratégie de réappropriation traverse toutes les luttes contre les discriminations. <strong>Joséphine Baker</strong>, par exemple, a détourné et réapproprié les stéréotypes racistes et coloniaux de la "sauvagerie" dans ses performances pour mieux les subvertir et affirmer sa puissance artistique et politique.</p>
+            
+            <p>De la même manière, les mouvements LGBTQI+ ont réapproprié "queer", "gouine" ou "pédé", les féministes ont retourné "sorcière", et les personnes racisées ont repris le contrôle de termes qui les désignaient.</p>
+            
+            <h3>Les cultures crip et mad</h3>
+            <p>Dans les pays anglophones, les mouvements <strong>crip</strong> (de cripple, "estropié") et <strong>mad</strong> ("fou") incarnent cette réappropriation radicale.</p>
+            
+            <p>Inspirés des travaux fondateurs des <strong>Disability Studies</strong> (notamment ceux de <strong>Rosemarie Garland-Thomson</strong>, <strong>Lennard Davis</strong>, ou <strong>Robert McRuer</strong>), ces mouvements affirment fièrement des identités longtemps niées ou pathologisées. En France, des collectifs comme le <strong>CLE Autistes</strong>, des militant·es handis ou psys reprennent aussi ces termes ("nous les fous", "nous les handicapés") dans une démarche de fierté et de lutte politique.</p>
+            
+            <h3>Une démarche politique collective</h3>
+            <p>La réappropriation n'est pas qu'individuelle : c'est un acte politique collectif qui vise à :</p>
+            <ul>
+                <li>Déstabiliser les normes oppressives (validistes, sanistes, racistes, sexistes...)</li>
+                <li>Affirmer une identité positive face à la stigmatisation</li>
+                <li>Créer de la solidarité et du pouvoir d'agir entre personnes concernées</li>
+                <li>Contester le monopole des institutions (médicales, coloniales, patriarcales...) sur la définition des identités minorisées.</li>
+            </ul>
+            
+            <p>Comme l'analysent les chercheuses féministes et disability studies (<strong>Marta Russell</strong>, <strong>Sunaura Taylor</strong>, ou en France <strong>Myriam Winance</strong>, <strong>Isabelle Ville</strong>), cette réappropriation s'inscrit dans une longue tradition de luttes émancipatrices où les groupes opprimés reprennent le contrôle du langage qui les désigne.</p>
+            
+            <h3>Attention</h3>
+            <p><strong>Ce n'est pas parce qu'une personne concernée utilise un terme pour elle-même que les personnes non-concernées peuvent l'utiliser librement.</strong></p>
+            
+            <p>La réappropriation est un droit qui appartient aux personnes discriminées.</p>
+            
+            <p>Les personnes valides ou sans trouble psy ne peuvent pas se servir de cette réappropriation pour justifier leur usage de termes validistes ou sanistes.</p>
+            
+            <p>C'est la même logique que dans les luttes antiracistes, LGBTQI+ ou féministes.</p>
+            
+            <p><strong>"Rien sur nous sans nous"</strong> (Nothing about us without us), slogan historique du mouvement handicap depuis les années 1990.</p>
+        `
     },
 
     hallOfShame: `
@@ -2253,8 +2245,7 @@ reappropriation: `
 
         <p><strong>Morale :</strong> Ces exemples viennent tous de la droite et de l'extrême-droite. Service public, candidats à la présidentielle, ministres... Le validisme existe partout, mais il est particulièrement présent et décomplexé dans ces milieux. C'est pour cela qu'un travail sur notre langage quotidien est essentiel. Parbleu !</p>
     `
-},
-
+};
 // ========================================
 // ALTERNATIVES COMPLÈTES
 // ========================================
@@ -2354,8 +2345,19 @@ const ALTERNATIVES = {
                 <li><strong>Sofocrate</strong> – <em>sophos + kratos</em> – se croit sage et impose ses idées</li>
                 <li><strong>Tartignolard</strong> – <em>tartignole</em> – ridicule prétentieux, fanfaron</li>
                 <li><strong>Tartufolique</strong> – <em>Tartuffe + philos</em> – faux dévot, hypocrite à l'excès</li>
-                <li><strong>Tic-taculeux</strong> – <em>tic-tac + suffixe</em> – obsessionnel sur les détails chronométriques</li> <li><strong>Ventripotent</strong> – <em>venter + potent</em> – exubérant, prétentieux et gourmand</li> <li><strong>Vaporfique</strong> – <em>vapor + ficus</em> – qui disparaît quand les problèmes arrivent</li> <li><strong>Vapulotomique</strong> – <em>vapor + luto + tomique</em> – qui fait beaucoup de bruit pour rien</li> <li><strong>Vexibond</strong> – <em>vexare + bondire</em> – qui s'indigne pour un rien, excessif</li> <li><strong>Verboplecte</strong> – <em>verbum + plectere</em> – s'emmêle dans ses propres mots</li> <li><strong>Xénophilophobe</strong> – <em>xeno + philo + phobe</em> – aime haïr ceux qui ne lui ressemblent pas</li> <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li> </ul> ` },
-regionaux: {
+                <li><strong>Tic-taculeux</strong> – <em>tic-tac + suffixe</em> – obsessionnel sur les détails chronométriques</li>
+                <li><strong>Ventripotent</strong> – <em>venter + potent</em> – exubérant, prétentieux et gourmand</li>
+                <li><strong>Vaporfique</strong> – <em>vapor + ficus</em> – qui disparaît quand les problèmes arrivent</li>
+                <li><strong>Vapulotomique</strong> – <em>vapor + luto + tomique</em> – qui fait beaucoup de bruit pour rien</li>
+                <li><strong>Vexibond</strong> – <em>vexare + bondire</em> – qui s'indigne pour un rien, excessif</li>
+                <li><strong>Verboplecte</strong> – <em>verbum + plectere</em> – s'emmêle dans ses propres mots</li>
+                <li><strong>Xénophilophobe</strong> – <em>xeno + philo + phobe</em> – aime haïr ceux qui ne lui ressemblent pas</li>
+                <li><strong>Xenovotant</strong> – <em>xeno + votant</em> – électeur guidé par la haine de l'étranger</li>
+            </ul>
+        `
+    }
+};
+ALTERNATIVES.regionaux = {
     titre: "Tour de France des insultes régionales non oppressives",
     sections: {
         alsacien: {
@@ -2546,63 +2548,67 @@ regionaux: {
             `
         }
     }
-},
-
-descriptions: {
-    titre: "Descriptions factuelles de comportements problématiques",
-    contenu: `
-        <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
-        <ul class="alternatives-list">
-            <li>Tu mens / Tu es malhonnête</li>
-            <li>Tu es violent / agressif</li>
-            <li>Tu es irrespectueux / impoli / grossier</li>
-            <li>Tu es méprisant / condescendant</li>
-            <li>Tu manipules / Tu es manipulateur</li>
-            <li>Tu es cruel / impitoyable / insensible</li>
-        </ul>
-    `
-},
-
-jurons: {
-    titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
-    contenu: `
-        <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
-        <p>Bougre !</p>
-        <p>Ça alors ! Ciel ! Corbleu ! Crénom ! Crédié !</p>
-        <p>Diable ! Diantre ! Doux Jésus !</p>
-        <p>Fichtre ! Fichtre bougre ! Fichtre diantre ! Fichtre dieu !</p>
-        <p>Grands dieux !</p>
-        <p>Jarnibleu ! Jarnidieu !</p>
-        <p>Ma parole ! Macache ! Mâtin ! Mazette ! Mazette alors ! Mille sabords ! Mille tonnerres ! Miséricorde ! Morbleu !</p>
-        <p>Nom d'un petit bonhomme ! Nom d'une pipe !</p>
-        <p>Palsambleu ! Par exemple ! Peste !</p>
-        <p>Que diable !</p>
-        <p>Sacrebleu ! Sacreblotte ! Saperlipopette ! Saperlotte !</p>
-        <p>Sapristi !</p>
-        <p>Tonnerre ! Tudieu !</p>
-        <p>Ventrebleu ! Vertubleu !</p>
-    `
-},
-
-conclusion: {
-    titre: "Conclusion",
-    contenu: `
-        <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
-        
-        <p>Changer son vocabulaire n'est pas de la censure : c'est :</p>
-        <ul>
-            <li>Enrichir sa langue</li>
-            <li>Affiner sa pensée</li>
-            <li>Respecter la dignité de chacun·e</li>
-            <li>Insulter avec CLASSE et créativité</li>
-        </ul>
-
-        <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
-        <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
-    `
-}
 };
-// ======================================== // EXPORT POUR UTILISATION DANS L'APP // ========================================
-if (typeof module !== 'undefined' && module.exports) { module.exports = { DICTIONARY, TEXTES, ALTERNATIVES }; }
+descriptions: {
+        titre: "Descriptions factuelles de comportements problématiques",
+        contenu: `
+            <p>Au lieu d'insulter la personne, décrivez précisément le comportement :</p>
+            <ul class="alternatives-list">
+                <li>Tu mens / Tu es malhonnête</li>
+                <li>Tu es violent / agressif</li>
+                <li>Tu es irrespectueux / impoli / grossier</li>
+                <li>Tu es méprisant / condescendant</li>
+                <li>Tu manipules / Tu es manipulateur</li>
+                <li>Tu es cruel / impitoyable / insensible</li>
+            </ul>
+        `
+    },
 
+    jurons: {
+        titre: "Jurons et exclamations pour remplacer 'C'est fou !'",
+        contenu: `
+            <p>Bigre ! Bon sang ! Bon sang de bois ! Bon sang de bonsoir !</p>
+            <p>Bougre !</p>
+            <p>Ça alors ! Ciel ! Corbleu ! Crénom ! Crédié !</p>
+            <p>Diable ! Diantre ! Doux Jésus !</p>
+            <p>Fichtre ! Fichtre bougre ! Fichtre diantre ! Fichtre dieu !</p>
+            <p>Grands dieux !</p>
+            <p>Jarnibleu ! Jarnidieu !</p>
+            <p>Ma parole ! Macache ! Mâtin ! Mazette ! Mazette alors ! Mille sabords ! Mille tonnerres ! Miséricorde ! Morbleu !</p>
+            <p>Nom d'un petit bonhomme ! Nom d'une pipe !</p>
+            <p>Palsambleu ! Par exemple ! Peste !</p>
+            <p>Que diable !</p>
+            <p>Sacrebleu ! Sacreblotte ! Saperlipopette ! Saperlotte !</p>
+            <p>Sapristi !</p>
+            <p>Tonnerre ! Tudieu !</p>
+            <p>Ventrebleu ! Vertubleu !</p>
+        `
+    },
+
+    conclusion: {
+        titre: "Conclusion",
+        contenu: `
+            <p>Le français est une langue d'une richesse EXTRAORDINAIRE. Nous avons des CENTAINES de mots pour exprimer des nuances, critiquer, se moquer, sans avoir besoin d'utiliser le handicap, la maladie ou les troubles mentaux comme repoussoirs.</p>
+            
+            <p>Changer son vocabulaire n'est pas de la censure : c'est :</p>
+            <ul>
+                <li>Enrichir sa langue</li>
+                <li>Affiner sa pensée</li>
+                <li>Respecter la dignité de chacun·e</li>
+                <li>Insulter avec CLASSE et créativité</li>
+            </ul>
+
+            <p><strong>La langue française et nos patois vous offrent un arsenal d'insultes magnifiques, alors servez-vous en !</strong></p>
+            <p>Et si cela ne vous suffit pas, allez voir la section "inventions satiriques lexicales" de ce dictionnaire !</p>
+        `
+    }
+};
+
+// ========================================
+// EXPORT POUR UTILISATION DANS L'APP
+// ========================================
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { DICTIONARY, TEXTES, ALTERNATIVES };
+}
 
