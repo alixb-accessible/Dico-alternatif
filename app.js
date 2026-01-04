@@ -155,26 +155,38 @@ function loadDefinitionsContent() {
     const container = document.getElementById('definitionsContent');
     if (!container) return;
     
-    if (container.hasChildNodes()) return;
+    if (container.hasChildNodes()) return; // Déjà chargé
     
-    container.innerHTML = `
-        <div class="info-section">
-            ${TEXTES.definitions.intro || ''}
-            ${TEXTES.definitions.validisme || ''}
-        </div>
-        <div class="info-section">
-            ${TEXTES.definitions.capacitisme || ''}
-        </div>
-        <div class="info-section">
-            ${TEXTES.definitions.sanisme || ''}
-        </div>
-        <div class="info-section">
-            ${TEXTES.definitions.handiphobie || ''}
-        </div>
-        <div class="info-section">
-            ${TEXTES.definitions.recoupements || ''}
-        </div>
-    `;
+    // Créer la liste alphabétique de TOUS les termes du dictionnaire
+    let html = '<div class="info-section"><h2>Tous les termes du dictionnaire</h2>';
+    html += `<p>Ce dictionnaire contient ${Object.keys(DICTIONARY).length} termes. Cliquez sur un terme pour voir sa définition complète et ses alternatives.</p>`;
+    
+    // Grouper par lettre
+    const termsByLetter = {};
+    Object.keys(DICTIONARY).sort().forEach(term => {
+        const firstLetter = term[0].toUpperCase();
+        if (!termsByLetter[firstLetter]) termsByLetter[firstLetter] = [];
+        termsByLetter[firstLetter].push(term);
+    });
+    
+    // Afficher par lettre alphabétique
+    for (const [letter, terms] of Object.entries(termsByLetter)) {
+        html += `<h3 id="letter-${letter}">${letter}</h3><ul class="alternatives-list">`;
+        terms.forEach(term => {
+            html += `<li style="cursor: pointer; border-left-color: #667eea;" 
+                onclick="performSearch('${term.replace(/'/g, "\\'")}')" 
+                onkeypress="if(event.key==='Enter') performSearch('${term.replace(/'/g, "\\'")}')"
+                tabindex="0" 
+                role="button"
+                aria-label="Voir la définition de ${term}">
+                <strong>${term}</strong>
+            </li>`;
+        });
+        html += '</ul>';
+    }
+    
+    html += '</div>';
+    container.innerHTML = html;
 }
 
 function loadAlternativesContent() {
